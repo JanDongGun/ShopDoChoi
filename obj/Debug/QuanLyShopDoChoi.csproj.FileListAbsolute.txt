@@ -32,3 +32,6 @@ C:\Users\donggon\Documents\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.csproj.Generate
 C:\Users\donggon\Documents\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.csproj.CoreCompileInputs.cache
 C:\Users\donggon\Documents\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.exe
 C:\Users\donggon\Documents\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.pdb
+C:\Users\donggon\Documents\ShopDoChoi\bin\Debug\QuanLyShopDoChoi.exe.config
+C:\Users\donggon\Documents\ShopDoChoi\bin\Debug\QuanLyShopDoChoi.exe
+C:\Users\donggon\Documents\ShopDoChoi\bin\Debug\QuanLyShopDoChoi.pdb

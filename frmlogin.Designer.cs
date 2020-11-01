@@ -61,7 +61,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(1126, 0);
             this.panel1.Name = "panel1";
-<<<<<<< HEAD
+
             this.panel1.Size = new System.Drawing.Size(93, 1061);
             this.panel1.TabIndex = 2;
             // 
@@ -69,11 +69,11 @@
             // 
 
             // 
-=======
+
             this.panel1.Size = new System.Drawing.Size(74, 720);
             this.panel1.TabIndex = 2;
             // 
->>>>>>> a8ccd82c84f849666223ec70fad3f7e32c654386
+
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -162,12 +162,11 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1900, 1061);
-=======
+
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1200, 720);
->>>>>>> a8ccd82c84f849666223ec70fad3f7e32c654386
+
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
