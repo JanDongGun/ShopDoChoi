@@ -23,9 +23,18 @@ namespace QuanLyShopDoChoi
             panelside.Height = btn.Height;
         }
 
+        private void AddControlsToPanel(Control c)
+        {
+            c.Dock = DockStyle.Fill;
+            panelControls.Controls.Clear();
+            panelControls.Controls.Add(c);
+        }
+
         private void btnHome_Click(object sender, EventArgs e)
         {
             moveSidePanel(btnHome);
+            UC_Home uch = new UC_Home();
+            AddControlsToPanel(uch);
         }
 
         private void btnSell_Click(object sender, EventArgs e)
@@ -56,11 +65,15 @@ namespace QuanLyShopDoChoi
         private void btnCustomer_Click(object sender, EventArgs e)
         {
             moveSidePanel(btnCustomer);
+            UC_Customer ucctm = new UC_Customer();
+            AddControlsToPanel(ucctm);
         }
 
         private void btnAccount_Click(object sender, EventArgs e)
         {
             moveSidePanel(btnAccount);
+            UC_Account ucac = new UC_Account();
+            AddControlsToPanel(ucac);
         }
     }
 }
