@@ -34,7 +34,9 @@ namespace QuanLyShopDoChoi
         private void btnLogin_Click(object sender, EventArgs e)
         {
             frmMain main = new frmMain();
+            frmlogin login = new frmlogin();
             main.ShowDialog();
+            login.Close();
         }
     }
 }
