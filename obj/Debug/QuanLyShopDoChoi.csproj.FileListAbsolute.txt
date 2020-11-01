@@ -24,3 +24,11 @@ C:\Users\Admin\Desktop\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.frmMain.resources
 >>>>>>> e55876af3845aac5995365081f55859db7a37443
 C:\Users\Admin\Desktop\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.csprojAssemblyReference.cache
 C:\Users\Admin\Desktop\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.csproj.CoreCompileInputs.cache
+C:\Users\donggon\Documents\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.csprojAssemblyReference.cache
+C:\Users\donggon\Documents\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.frmlogin.resources
+C:\Users\donggon\Documents\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.frmMain.resources
+C:\Users\donggon\Documents\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.Properties.Resources.resources
+C:\Users\donggon\Documents\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.csproj.GenerateResource.cache
+C:\Users\donggon\Documents\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.csproj.CoreCompileInputs.cache
+C:\Users\donggon\Documents\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.exe
+C:\Users\donggon\Documents\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.pdb

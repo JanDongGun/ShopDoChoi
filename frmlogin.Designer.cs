@@ -67,11 +67,7 @@
             // 
             // panel4
             // 
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 961);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1807, 100);
-            this.panel4.TabIndex = 11;
+
             // 
 =======
             this.panel1.Size = new System.Drawing.Size(74, 720);
