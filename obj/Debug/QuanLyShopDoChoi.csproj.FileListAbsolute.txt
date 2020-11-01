@@ -7,3 +7,14 @@ C:\Users\Admin\Desktop\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.Properties.Resource
 C:\Users\Admin\Desktop\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.csproj.GenerateResource.Cache
 C:\Users\Admin\Desktop\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.exe
 C:\Users\Admin\Desktop\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.pdb
+C:\Users\donggon\Documents\QuanLyShopDoChoi\bin\Debug\QuanLyShopDoChoi.exe.config
+C:\Users\donggon\Documents\QuanLyShopDoChoi\bin\Debug\QuanLyShopDoChoi.exe
+C:\Users\donggon\Documents\QuanLyShopDoChoi\bin\Debug\QuanLyShopDoChoi.pdb
+C:\Users\donggon\Documents\QuanLyShopDoChoi\obj\Debug\QuanLyShopDoChoi.csprojAssemblyReference.cache
+C:\Users\donggon\Documents\QuanLyShopDoChoi\obj\Debug\QuanLyShopDoChoi.frmlogin.resources
+C:\Users\donggon\Documents\QuanLyShopDoChoi\obj\Debug\QuanLyShopDoChoi.frmMain.resources
+C:\Users\donggon\Documents\QuanLyShopDoChoi\obj\Debug\QuanLyShopDoChoi.Properties.Resources.resources
+C:\Users\donggon\Documents\QuanLyShopDoChoi\obj\Debug\QuanLyShopDoChoi.csproj.GenerateResource.cache
+C:\Users\donggon\Documents\QuanLyShopDoChoi\obj\Debug\QuanLyShopDoChoi.csproj.CoreCompileInputs.cache
+C:\Users\donggon\Documents\QuanLyShopDoChoi\obj\Debug\QuanLyShopDoChoi.exe
+C:\Users\donggon\Documents\QuanLyShopDoChoi\obj\Debug\QuanLyShopDoChoi.pdb
