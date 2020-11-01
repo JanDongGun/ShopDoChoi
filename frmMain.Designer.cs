@@ -48,7 +48,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.panelControls = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -317,19 +317,19 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome:";
             // 
-            // panel5
+            // panelControls
             // 
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(215, 131);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(985, 589);
-            this.panel5.TabIndex = 4;
+            this.panelControls.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelControls.Location = new System.Drawing.Point(215, 131);
+            this.panelControls.Name = "panelControls";
+            this.panelControls.Size = new System.Drawing.Size(985, 589);
+            this.panelControls.TabIndex = 4;
             // 
             // frmMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1200, 720);
-            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panelControls);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
@@ -370,6 +370,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panelControls;
     }
 }
