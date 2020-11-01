@@ -72,7 +72,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(172, 720);
+            this.panel1.Size = new System.Drawing.Size(215, 720);
             this.panel1.TabIndex = 0;
             // 
             // btnUser
@@ -196,12 +196,12 @@
             // 
             // panelside
             // 
-            this.panelside.BackColor = System.Drawing.Color.White;
+            this.panelside.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(119)))), ((int)(((byte)(165)))));
             this.panelside.Cursor = System.Windows.Forms.Cursors.PanSW;
             this.panelside.ForeColor = System.Drawing.Color.White;
-            this.panelside.Location = new System.Drawing.Point(3, 137);
+            this.panelside.Location = new System.Drawing.Point(1, 137);
             this.panelside.Name = "panelside";
-            this.panelside.Size = new System.Drawing.Size(7, 60);
+            this.panelside.Size = new System.Drawing.Size(10, 60);
             this.panelside.TabIndex = 4;
             // 
             // btnHome
@@ -233,7 +233,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(16, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(36, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(140, 140);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -244,9 +244,9 @@
             // 
             this.panel3.Controls.Add(this.label2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(172, 0);
+            this.panel3.Location = new System.Drawing.Point(215, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1028, 36);
+            this.panel3.Size = new System.Drawing.Size(985, 36);
             this.panel3.TabIndex = 2;
             // 
             // label2
@@ -268,9 +268,9 @@
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.label1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(172, 36);
+            this.panel4.Location = new System.Drawing.Point(215, 36);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1028, 76);
+            this.panel4.Size = new System.Drawing.Size(985, 95);
             this.panel4.TabIndex = 3;
             // 
             // label5
@@ -320,9 +320,9 @@
             // panel5
             // 
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(172, 112);
+            this.panel5.Location = new System.Drawing.Point(215, 131);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1028, 608);
+            this.panel5.Size = new System.Drawing.Size(985, 589);
             this.panel5.TabIndex = 4;
             // 
             // frmMain

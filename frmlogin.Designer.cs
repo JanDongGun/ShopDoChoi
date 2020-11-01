@@ -61,19 +61,9 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(1126, 0);
             this.panel1.Name = "panel1";
-
-            this.panel1.Size = new System.Drawing.Size(93, 1061);
-            this.panel1.TabIndex = 2;
-            // 
-            // panel4
-            // 
-
-            // 
-
             this.panel1.Size = new System.Drawing.Size(74, 720);
             this.panel1.TabIndex = 2;
             // 
-
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -98,6 +88,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(96)))), ((int)(((byte)(96)))));
             this.label1.Location = new System.Drawing.Point(849, 226);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(281, 58);
@@ -162,11 +153,8 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1900, 1061);
-
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1200, 720);
-
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
