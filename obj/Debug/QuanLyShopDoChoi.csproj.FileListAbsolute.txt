@@ -7,6 +7,7 @@ C:\Users\Admin\Desktop\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.Properties.Resource
 C:\Users\Admin\Desktop\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.csproj.GenerateResource.Cache
 C:\Users\Admin\Desktop\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.exe
 C:\Users\Admin\Desktop\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.pdb
+<<<<<<< HEAD
 C:\Users\donggon\Documents\QuanLyShopDoChoi\bin\Debug\QuanLyShopDoChoi.exe.config
 C:\Users\donggon\Documents\QuanLyShopDoChoi\bin\Debug\QuanLyShopDoChoi.exe
 C:\Users\donggon\Documents\QuanLyShopDoChoi\bin\Debug\QuanLyShopDoChoi.pdb
@@ -18,3 +19,6 @@ C:\Users\donggon\Documents\QuanLyShopDoChoi\obj\Debug\QuanLyShopDoChoi.csproj.Ge
 C:\Users\donggon\Documents\QuanLyShopDoChoi\obj\Debug\QuanLyShopDoChoi.csproj.CoreCompileInputs.cache
 C:\Users\donggon\Documents\QuanLyShopDoChoi\obj\Debug\QuanLyShopDoChoi.exe
 C:\Users\donggon\Documents\QuanLyShopDoChoi\obj\Debug\QuanLyShopDoChoi.pdb
+=======
+C:\Users\Admin\Desktop\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.frmMain.resources
+>>>>>>> e55876af3845aac5995365081f55859db7a37443

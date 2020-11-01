@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30517.126
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyShopDoChoi", "QuanLyShopDoChoi.csproj", "{7B96AEE0-CBAC-41CA-95A1-E4498128CF41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT1_Trang60", "E:\TaiLieu\WindowsForm\BT1_Trang60\BT1_Trang60\BT1_Trang60\BT1_Trang60.csproj", "{2321B500-40F3-4F54-AF26-57F29F5CD91C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{7B96AEE0-CBAC-41CA-95A1-E4498128CF41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B96AEE0-CBAC-41CA-95A1-E4498128CF41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B96AEE0-CBAC-41CA-95A1-E4498128CF41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2321B500-40F3-4F54-AF26-57F29F5CD91C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2321B500-40F3-4F54-AF26-57F29F5CD91C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2321B500-40F3-4F54-AF26-57F29F5CD91C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2321B500-40F3-4F54-AF26-57F29F5CD91C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
