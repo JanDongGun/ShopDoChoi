@@ -55,9 +55,9 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(72, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 22);
+            this.label1.Size = new System.Drawing.Size(137, 22);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Tên sản phẩm";
+            this.label1.Text = "Product\'s name";
             // 
             // label2
             // 
@@ -65,9 +65,9 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(72, 90);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 22);
+            this.label2.Size = new System.Drawing.Size(53, 22);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Giá tiền";
+            this.label2.Text = "Price";
             // 
             // label3
             // 
@@ -75,9 +75,9 @@
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(72, 133);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(117, 22);
+            this.label3.Size = new System.Drawing.Size(195, 22);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Số lượng còn";
+            this.label3.Text = "The remaining amount";
             // 
             // label4
             // 
@@ -85,9 +85,9 @@
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(72, 176);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 22);
+            this.label4.Size = new System.Drawing.Size(82, 22);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Giảm giá";
+            this.label4.Text = "Discount";
             // 
             // listView1
             // 
@@ -102,7 +102,7 @@
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(3, 301);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1192, 271);
+            this.listView1.Size = new System.Drawing.Size(1195, 271);
             this.listView1.TabIndex = 4;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -114,22 +114,22 @@
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Tên sản phẩm";
+            this.columnHeader2.Text = "Product\'s name";
             this.columnHeader2.Width = 328;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Giá bán";
+            this.columnHeader3.Text = "Price";
             this.columnHeader3.Width = 290;
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Giảm giá";
+            this.columnHeader4.Text = "Discount";
             this.columnHeader4.Width = 308;
             // 
             // columnHeader5
             // 
-            this.columnHeader5.Text = "Số lượng còn";
+            this.columnHeader5.Text = "The remaining amount";
             this.columnHeader5.Width = 202;
             // 
             // btnXoapro
@@ -141,7 +141,7 @@
             this.btnXoapro.Name = "btnXoapro";
             this.btnXoapro.Size = new System.Drawing.Size(174, 39);
             this.btnXoapro.TabIndex = 8;
-            this.btnXoapro.Text = "Xóa";
+            this.btnXoapro.Text = "Delete";
             this.btnXoapro.UseVisualStyleBackColor = false;
             // 
             // btnThempro
@@ -153,7 +153,7 @@
             this.btnThempro.Name = "btnThempro";
             this.btnThempro.Size = new System.Drawing.Size(162, 39);
             this.btnThempro.TabIndex = 7;
-            this.btnThempro.Text = "Thêm";
+            this.btnThempro.Text = "Add";
             this.btnThempro.UseVisualStyleBackColor = false;
             // 
             // btnSuapro
@@ -165,33 +165,33 @@
             this.btnSuapro.Name = "btnSuapro";
             this.btnSuapro.Size = new System.Drawing.Size(171, 39);
             this.btnSuapro.TabIndex = 6;
-            this.btnSuapro.Text = "Sửa";
+            this.btnSuapro.Text = "Modify";
             this.btnSuapro.UseVisualStyleBackColor = false;
             // 
             // txtTenSPpro
             // 
-            this.txtTenSPpro.Location = new System.Drawing.Point(204, 49);
+            this.txtTenSPpro.Location = new System.Drawing.Point(273, 51);
             this.txtTenSPpro.Name = "txtTenSPpro";
             this.txtTenSPpro.Size = new System.Drawing.Size(374, 20);
             this.txtTenSPpro.TabIndex = 9;
             // 
             // txtGiapro
             // 
-            this.txtGiapro.Location = new System.Drawing.Point(204, 90);
+            this.txtGiapro.Location = new System.Drawing.Point(273, 90);
             this.txtGiapro.Name = "txtGiapro";
             this.txtGiapro.Size = new System.Drawing.Size(374, 20);
             this.txtGiapro.TabIndex = 10;
             // 
             // txtsoluongpro
             // 
-            this.txtsoluongpro.Location = new System.Drawing.Point(204, 134);
+            this.txtsoluongpro.Location = new System.Drawing.Point(273, 136);
             this.txtsoluongpro.Name = "txtsoluongpro";
             this.txtsoluongpro.Size = new System.Drawing.Size(374, 20);
             this.txtsoluongpro.TabIndex = 11;
             // 
             // txtgiamgiapro
             // 
-            this.txtgiamgiapro.Location = new System.Drawing.Point(204, 174);
+            this.txtgiamgiapro.Location = new System.Drawing.Point(273, 176);
             this.txtgiamgiapro.Name = "txtgiamgiapro";
             this.txtgiamgiapro.Size = new System.Drawing.Size(374, 20);
             this.txtgiamgiapro.TabIndex = 12;
@@ -209,7 +209,7 @@
             // cbsearchpro
             // 
             this.cbsearchpro.FormattingEnabled = true;
-            this.cbsearchpro.Location = new System.Drawing.Point(204, 215);
+            this.cbsearchpro.Location = new System.Drawing.Point(273, 219);
             this.cbsearchpro.Name = "cbsearchpro";
             this.cbsearchpro.Size = new System.Drawing.Size(200, 21);
             this.cbsearchpro.TabIndex = 14;

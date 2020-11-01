@@ -53,7 +53,7 @@
             this.btnXoaus.Name = "btnXoaus";
             this.btnXoaus.Size = new System.Drawing.Size(174, 39);
             this.btnXoaus.TabIndex = 11;
-            this.btnXoaus.Text = "Xóa";
+            this.btnXoaus.Text = "Delete";
             this.btnXoaus.UseVisualStyleBackColor = false;
             // 
             // btnThemus
@@ -65,7 +65,7 @@
             this.btnThemus.Name = "btnThemus";
             this.btnThemus.Size = new System.Drawing.Size(162, 39);
             this.btnThemus.TabIndex = 10;
-            this.btnThemus.Text = "Thêm";
+            this.btnThemus.Text = "Add";
             this.btnThemus.UseVisualStyleBackColor = false;
             // 
             // btnSuaus
@@ -77,7 +77,7 @@
             this.btnSuaus.Name = "btnSuaus";
             this.btnSuaus.Size = new System.Drawing.Size(171, 39);
             this.btnSuaus.TabIndex = 9;
-            this.btnSuaus.Text = "Sửa";
+            this.btnSuaus.Text = "Modify";
             this.btnSuaus.UseVisualStyleBackColor = false;
             // 
             // label1
@@ -86,9 +86,9 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(83, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 24);
+            this.label1.Size = new System.Drawing.Size(139, 24);
             this.label1.TabIndex = 12;
-            this.label1.Text = "Tên tài khoản";
+            this.label1.Text = "Account name";
             // 
             // label2
             // 
@@ -96,9 +96,9 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(83, 100);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 24);
+            this.label2.Size = new System.Drawing.Size(125, 24);
             this.label2.TabIndex = 13;
-            this.label2.Text = "Ngày tạo";
+            this.label2.Text = "Date created";
             // 
             // label3
             // 
@@ -155,7 +155,7 @@
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Tên tài khoản";
+            this.columnHeader2.Text = "Accout name";
             this.columnHeader2.Width = 310;
             // 
             // columnHeader3
@@ -165,7 +165,7 @@
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Ngày tạo";
+            this.columnHeader4.Text = "Date created";
             this.columnHeader4.Width = 464;
             // 
             // uc_user

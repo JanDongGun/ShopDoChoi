@@ -51,11 +51,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(167, 76);
+            this.label1.Location = new System.Drawing.Point(187, 76);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(210, 32);
+            this.label1.Size = new System.Drawing.Size(174, 32);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Tên loại đồ chơi";
+            this.label1.Text = "Name of toys";
             // 
             // lvKind
             // 
@@ -81,7 +81,7 @@
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Tên loại đồ chơi";
+            this.columnHeader2.Text = "Name of toys";
             this.columnHeader2.Width = 512;
             // 
             // btnSuakind
@@ -93,7 +93,7 @@
             this.btnSuakind.Name = "btnSuakind";
             this.btnSuakind.Size = new System.Drawing.Size(171, 39);
             this.btnSuakind.TabIndex = 3;
-            this.btnSuakind.Text = "Sửa";
+            this.btnSuakind.Text = "Modify";
             this.btnSuakind.UseVisualStyleBackColor = false;
             // 
             // btnThemkind
@@ -105,7 +105,7 @@
             this.btnThemkind.Name = "btnThemkind";
             this.btnThemkind.Size = new System.Drawing.Size(162, 39);
             this.btnThemkind.TabIndex = 4;
-            this.btnThemkind.Text = "Thêm";
+            this.btnThemkind.Text = "Add";
             this.btnThemkind.UseVisualStyleBackColor = false;
             // 
             // btnXoakind
@@ -117,7 +117,7 @@
             this.btnXoakind.Name = "btnXoakind";
             this.btnXoakind.Size = new System.Drawing.Size(174, 39);
             this.btnXoakind.TabIndex = 5;
-            this.btnXoakind.Text = "Xóa";
+            this.btnXoakind.Text = "Delete";
             this.btnXoakind.UseVisualStyleBackColor = false;
             // 
             // uc_kind
