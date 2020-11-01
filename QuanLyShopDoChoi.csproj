@@ -61,11 +61,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UC_Bills.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Bills.Designer.cs">
+      <DependentUpon>UC_Bills.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_Home.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UC_Home.Designer.cs">
       <DependentUpon>UC_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Sales.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Sales.Designer.cs">
+      <DependentUpon>UC_Sales.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="frmlogin.resx">
       <DependentUpon>frmlogin.cs</DependentUpon>
@@ -83,8 +95,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UC_Bills.resx">
+      <DependentUpon>UC_Bills.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC_Home.resx">
       <DependentUpon>UC_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Sales.resx">
+      <DependentUpon>UC_Sales.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
