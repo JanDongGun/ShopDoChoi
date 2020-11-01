@@ -16,6 +16,8 @@ namespace QuanLyShopDoChoi
         public frmMain()
         {
             InitializeComponent();
+            UC_Home uch = new UC_Home();
+            AddControlsToPanel(uch);
         }
 
         private void moveSidePanel(Control btn)
@@ -41,11 +43,15 @@ namespace QuanLyShopDoChoi
         private void btnSell_Click(object sender, EventArgs e)
         {
             moveSidePanel(btnSell);
+            UC_Sales ucs = new UC_Sales();
+            AddControlsToPanel(ucs);
         }
 
         private void btnBill_Click(object sender, EventArgs e)
         {
             moveSidePanel(btnBill);
+            UC_Bills ucb = new UC_Bills();
+            AddControlsToPanel(ucb);
         }
 
         private void btnKind_Click(object sender, EventArgs e)
@@ -82,6 +88,16 @@ namespace QuanLyShopDoChoi
             moveSidePanel(btnAccount);
             UC_Account ucac = new UC_Account();
             AddControlsToPanel(ucac);
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ptbExit_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }
