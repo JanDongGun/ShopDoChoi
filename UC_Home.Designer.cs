@@ -38,7 +38,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(155, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(283, 39);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(674, 404);
             this.pictureBox1.TabIndex = 0;
@@ -49,7 +49,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(96)))), ((int)(((byte)(96)))));
-            this.label1.Location = new System.Drawing.Point(272, 451);
+            this.label1.Location = new System.Drawing.Point(400, 487);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(429, 44);
             this.label1.TabIndex = 1;
@@ -60,7 +60,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(96)))), ((int)(((byte)(96)))));
-            this.label2.Location = new System.Drawing.Point(373, 503);
+            this.label2.Location = new System.Drawing.Point(501, 539);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(197, 22);
             this.label2.TabIndex = 2;
