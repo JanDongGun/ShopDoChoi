@@ -22,3 +22,5 @@ C:\Users\donggon\Documents\QuanLyShopDoChoi\obj\Debug\QuanLyShopDoChoi.pdb
 =======
 C:\Users\Admin\Desktop\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.frmMain.resources
 >>>>>>> e55876af3845aac5995365081f55859db7a37443
+C:\Users\Admin\Desktop\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.csproj.CoreCompileInputs.cache

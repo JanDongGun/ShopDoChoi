@@ -65,5 +65,10 @@ namespace QuanLyShopDoChoi
         {
 
         }
+
+        private void frmlogin_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
