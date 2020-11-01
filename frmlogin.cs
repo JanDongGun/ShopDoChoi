@@ -19,7 +19,16 @@ namespace QuanLyShopDoChoi
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            pblogin.SizeMode = PictureBoxSizeMode.StretchImage;
+           
+        }
+        private void frmlogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
