@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyShopDoChoi.Usercontrol;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -50,16 +51,23 @@ namespace QuanLyShopDoChoi
         private void btnKind_Click(object sender, EventArgs e)
         {
             moveSidePanel(btnKind);
+            uc_kind uk = new uc_kind();
+            AddControlsToPanel(uk);
+            
         }
 
         private void btnProduct_Click(object sender, EventArgs e)
         {
             moveSidePanel(btnProduct);
+            uc_product up = new uc_product();
+            AddControlsToPanel(up);
         }
 
         private void btnUser_Click(object sender, EventArgs e)
         {
             moveSidePanel(btnUser);
+            uc_user us = new uc_user();
+            AddControlsToPanel(us);
         }
 
         private void btnCustomer_Click(object sender, EventArgs e)

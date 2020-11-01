@@ -37,5 +37,9 @@ C:\Users\donggon\Documents\ShopDoChoi\bin\Debug\QuanLyShopDoChoi.exe
 C:\Users\donggon\Documents\ShopDoChoi\bin\Debug\QuanLyShopDoChoi.pdb
 C:\Users\donggon\Documents\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.UC_Home.resources
 C:\Users\Admin\Desktop\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.UC_Home.resources
+C:\Users\Admin\Desktop\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.Usercontrol.uc_kind.resources
+C:\Users\Admin\Desktop\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.Usercontrol.uc_product.resources
+C:\Users\Admin\Desktop\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.Usercontrol.uc_user.resources
 C:\Users\Admin\Desktop\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.UC_Customer.resources
 C:\Users\Admin\Desktop\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.UC_Account.resources
+>>>>>>> 0f78c12c1cb6ee132184f7fa82bfb8f95c1d5f1f
