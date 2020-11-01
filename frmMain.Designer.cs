@@ -71,7 +71,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(215, 720);
+            this.panel1.Size = new System.Drawing.Size(172, 720);
             this.panel1.TabIndex = 0;
             // 
             // btnUser
@@ -243,9 +243,9 @@
             // 
             this.panel3.Controls.Add(this.label2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(215, 0);
+            this.panel3.Location = new System.Drawing.Point(138, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(985, 45);
+            this.panel3.Size = new System.Drawing.Size(1062, 36);
             this.panel3.TabIndex = 2;
             // 
             // label2
@@ -267,9 +267,9 @@
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.label1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(215, 45);
+            this.panel4.Location = new System.Drawing.Point(138, 29);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(985, 95);
+            this.panel4.Size = new System.Drawing.Size(1062, 76);
             this.panel4.TabIndex = 3;
             // 
             // label5
@@ -319,7 +319,7 @@
             // frmMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1200, 720);
+            this.ClientSize = new System.Drawing.Size(1500, 900);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
