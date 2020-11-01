@@ -62,13 +62,13 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(1807, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(93, 1080);
+            this.panel1.Size = new System.Drawing.Size(93, 1061);
             this.panel1.TabIndex = 2;
             // 
             // panel4
             // 
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 980);
+            this.panel4.Location = new System.Drawing.Point(0, 961);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1807, 100);
             this.panel4.TabIndex = 11;
@@ -159,7 +159,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1900, 1080);
+            this.ClientSize = new System.Drawing.Size(1900, 1061);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
