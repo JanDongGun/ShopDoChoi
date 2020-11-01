@@ -61,13 +61,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
+
     <Compile Include="UC_Bills.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UC_Bills.Designer.cs">
       <DependentUpon>UC_Bills.cs</DependentUpon>
-=======
+    </Compile>
     <Compile Include="UC_Account.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -79,7 +79,7 @@
     </Compile>
     <Compile Include="UC_Customer.Designer.cs">
       <DependentUpon>UC_Customer.cs</DependentUpon>
->>>>>>> 20844b07e6044a6537ca0299ea87e37b06d24c07
+
     </Compile>
     <Compile Include="UC_Home.cs">
       <SubType>UserControl</SubType>
@@ -87,13 +87,13 @@
     <Compile Include="UC_Home.Designer.cs">
       <DependentUpon>UC_Home.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
+
     <Compile Include="UC_Sales.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UC_Sales.Designer.cs">
       <DependentUpon>UC_Sales.cs</DependentUpon>
-=======
+    </Compile>
     <Compile Include="uc_kind.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -111,7 +111,7 @@
     </Compile>
     <Compile Include="uc_user.Designer.cs">
       <DependentUpon>uc_user.cs</DependentUpon>
->>>>>>> 20844b07e6044a6537ca0299ea87e37b06d24c07
+
     </Compile>
     <EmbeddedResource Include="frmlogin.resx">
       <DependentUpon>frmlogin.cs</DependentUpon>
@@ -129,24 +129,25 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-<<<<<<< HEAD
+
     <EmbeddedResource Include="UC_Bills.resx">
       <DependentUpon>UC_Bills.cs</DependentUpon>
-=======
+    </EmbeddedResource>
     <EmbeddedResource Include="UC_Account.resx">
       <DependentUpon>UC_Account.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Customer.resx">
       <DependentUpon>UC_Customer.cs</DependentUpon>
->>>>>>> 20844b07e6044a6537ca0299ea87e37b06d24c07
+
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Home.resx">
       <DependentUpon>UC_Home.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
+
     <EmbeddedResource Include="UC_Sales.resx">
       <DependentUpon>UC_Sales.cs</DependentUpon>
-=======
+    </EmbeddedResource>
+      
     <EmbeddedResource Include="uc_kind.resx">
       <DependentUpon>uc_kind.cs</DependentUpon>
     </EmbeddedResource>
@@ -155,8 +156,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="uc_user.resx">
       <DependentUpon>uc_user.cs</DependentUpon>
->>>>>>> 20844b07e6044a6537ca0299ea87e37b06d24c07
+
     </EmbeddedResource>
+      
+      
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
