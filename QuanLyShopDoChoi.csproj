@@ -67,6 +67,24 @@
     <Compile Include="UC_Home.Designer.cs">
       <DependentUpon>UC_Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="uc_kind.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_kind.Designer.cs">
+      <DependentUpon>uc_kind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_product.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_product.Designer.cs">
+      <DependentUpon>uc_product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_user.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_user.Designer.cs">
+      <DependentUpon>uc_user.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmlogin.resx">
       <DependentUpon>frmlogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,6 +103,15 @@
     </Compile>
     <EmbeddedResource Include="UC_Home.resx">
       <DependentUpon>UC_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_kind.resx">
+      <DependentUpon>uc_kind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_product.resx">
+      <DependentUpon>uc_product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_user.resx">
+      <DependentUpon>uc_user.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
