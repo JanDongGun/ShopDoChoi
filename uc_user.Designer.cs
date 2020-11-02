@@ -121,21 +121,21 @@
             // 
             this.txtTenTKus.Location = new System.Drawing.Point(233, 56);
             this.txtTenTKus.Name = "txtTenTKus";
-            this.txtTenTKus.Size = new System.Drawing.Size(303, 20);
+            this.txtTenTKus.Size = new System.Drawing.Size(212, 20);
             this.txtTenTKus.TabIndex = 15;
             // 
             // txtPassus
             // 
             this.txtPassus.Location = new System.Drawing.Point(233, 148);
             this.txtPassus.Name = "txtPassus";
-            this.txtPassus.Size = new System.Drawing.Size(303, 20);
+            this.txtPassus.Size = new System.Drawing.Size(212, 20);
             this.txtPassus.TabIndex = 16;
             // 
             // txtNgaytaous
             // 
             this.txtNgaytaous.Location = new System.Drawing.Point(233, 103);
             this.txtNgaytaous.Name = "txtNgaytaous";
-            this.txtNgaytaous.Size = new System.Drawing.Size(303, 20);
+            this.txtNgaytaous.Size = new System.Drawing.Size(212, 20);
             this.txtNgaytaous.TabIndex = 17;
             // 
             // listView1

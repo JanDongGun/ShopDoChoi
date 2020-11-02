@@ -45,7 +45,7 @@
             this.txtTenLoaiDC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(176)))), ((int)(((byte)(211)))));
             this.txtTenLoaiDC.Location = new System.Drawing.Point(408, 60);
             this.txtTenLoaiDC.Name = "txtTenLoaiDC";
-            this.txtTenLoaiDC.Size = new System.Drawing.Size(260, 22);
+            this.txtTenLoaiDC.Size = new System.Drawing.Size(237, 22);
             this.txtTenLoaiDC.TabIndex = 0;
             // 
             // label1
@@ -53,7 +53,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(96)))), ((int)(((byte)(96)))));
-            this.label1.Location = new System.Drawing.Point(265, 59);
+            this.label1.Location = new System.Drawing.Point(290, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 21);
             this.label1.TabIndex = 1;

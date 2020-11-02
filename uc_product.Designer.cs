@@ -37,6 +37,7 @@
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnXoapro = new System.Windows.Forms.Button();
             this.btnThempro = new System.Windows.Forms.Button();
             this.btnSuapro = new System.Windows.Forms.Button();
@@ -49,9 +50,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.cbloaidcpro = new System.Windows.Forms.ComboBox();
             this.txtsearchpro = new System.Windows.Forms.TextBox();
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label4 = new System.Windows.Forms.Label();
             this.txtNotepro = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cbSortpro = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -131,6 +133,11 @@
             this.columnHeader5.Text = "Quantity ";
             this.columnHeader5.Width = 218;
             // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Note";
+            this.columnHeader4.Width = 155;
+            // 
             // btnXoapro
             // 
             this.btnXoapro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(176)))), ((int)(((byte)(211)))));
@@ -198,7 +205,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(96)))), ((int)(((byte)(96)))));
-            this.label5.Location = new System.Drawing.Point(753, 185);
+            this.label5.Location = new System.Drawing.Point(786, 184);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(85, 21);
             this.label5.TabIndex = 13;
@@ -207,7 +214,7 @@
             // cbsearchpro
             // 
             this.cbsearchpro.FormattingEnabled = true;
-            this.cbsearchpro.Location = new System.Drawing.Point(853, 185);
+            this.cbsearchpro.Location = new System.Drawing.Point(904, 184);
             this.cbsearchpro.Name = "cbsearchpro";
             this.cbsearchpro.Size = new System.Drawing.Size(61, 21);
             this.cbsearchpro.TabIndex = 14;
@@ -246,15 +253,10 @@
             // 
             // txtsearchpro
             // 
-            this.txtsearchpro.Location = new System.Drawing.Point(920, 186);
+            this.txtsearchpro.Location = new System.Drawing.Point(981, 185);
             this.txtsearchpro.Name = "txtsearchpro";
             this.txtsearchpro.Size = new System.Drawing.Size(104, 20);
             this.txtsearchpro.TabIndex = 18;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Note";
-            this.columnHeader4.Width = 155;
             // 
             // label4
             // 
@@ -276,10 +278,36 @@
             this.txtNotepro.Size = new System.Drawing.Size(186, 63);
             this.txtNotepro.TabIndex = 20;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(96)))), ((int)(((byte)(96)))));
+            this.label7.Location = new System.Drawing.Point(786, 146);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(108, 21);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "Sort by nhan";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // cbSortpro
+            // 
+            this.cbSortpro.FormattingEnabled = true;
+            this.cbSortpro.Items.AddRange(new object[] {
+            "A -> Z",
+            "Kind"});
+            this.cbSortpro.Location = new System.Drawing.Point(904, 146);
+            this.cbSortpro.Name = "cbSortpro";
+            this.cbSortpro.Size = new System.Drawing.Size(181, 21);
+            this.cbSortpro.TabIndex = 22;
+            this.cbSortpro.SelectedIndexChanged += new System.EventHandler(this.cbSortpro_SelectedIndexChanged);
+            // 
             // uc_product
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.cbSortpro);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.txtNotepro);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtsearchpro);
@@ -332,5 +360,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtNotepro;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cbSortpro;
     }
 }
