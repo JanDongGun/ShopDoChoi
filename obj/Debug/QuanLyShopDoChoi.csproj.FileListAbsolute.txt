@@ -51,3 +51,5 @@ C:\Users\donggon\Documents\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.UC_Customer.res
 C:\Users\donggon\Documents\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.Usercontrol.uc_kind.resources
 C:\Users\donggon\Documents\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.Usercontrol.uc_product.resources
 C:\Users\donggon\Documents\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.Usercontrol.uc_user.resources
+C:\Users\Admin\Desktop\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.UC_Bills.resources
+C:\Users\Admin\Desktop\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.UC_Sales.resources

@@ -16,5 +16,30 @@ namespace QuanLyShopDoChoi.Usercontrol
         {
             InitializeComponent();
         }
+
+        private void btnXoapro_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSuapro_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbSortpro_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
