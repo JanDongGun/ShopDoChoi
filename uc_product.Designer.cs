@@ -54,6 +54,7 @@
             this.txtNotepro = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cbSortpro = new System.Windows.Forms.ComboBox();
+            this.cboSortpro1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -144,7 +145,11 @@
             this.btnXoapro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoapro.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoapro.ForeColor = System.Drawing.Color.Transparent;
+<<<<<<< HEAD
             this.btnXoapro.Location = new System.Drawing.Point(533, 520);
+=======
+            this.btnXoapro.Location = new System.Drawing.Point(499, 520);
+>>>>>>> c44ac39dc952ded6710d041d54bd68874174fced
             this.btnXoapro.Name = "btnXoapro";
             this.btnXoapro.Size = new System.Drawing.Size(108, 33);
             this.btnXoapro.TabIndex = 8;
@@ -158,7 +163,11 @@
             this.btnThempro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThempro.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThempro.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btnThempro.Location = new System.Drawing.Point(379, 155);
+=======
+            this.btnThempro.Location = new System.Drawing.Point(403, 170);
+>>>>>>> c44ac39dc952ded6710d041d54bd68874174fced
             this.btnThempro.Name = "btnThempro";
             this.btnThempro.Size = new System.Drawing.Size(108, 33);
             this.btnThempro.TabIndex = 7;
@@ -205,7 +214,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(96)))), ((int)(((byte)(96)))));
-            this.label5.Location = new System.Drawing.Point(786, 184);
+            this.label5.Location = new System.Drawing.Point(649, 188);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(85, 19);
             this.label5.TabIndex = 13;
@@ -214,7 +223,7 @@
             // cbsearchpro
             // 
             this.cbsearchpro.FormattingEnabled = true;
-            this.cbsearchpro.Location = new System.Drawing.Point(904, 184);
+            this.cbsearchpro.Location = new System.Drawing.Point(740, 189);
             this.cbsearchpro.Name = "cbsearchpro";
             this.cbsearchpro.Size = new System.Drawing.Size(61, 21);
             this.cbsearchpro.TabIndex = 14;
@@ -225,7 +234,7 @@
             this.btnUpdatepro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdatepro.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdatepro.ForeColor = System.Drawing.Color.White;
-            this.btnUpdatepro.Location = new System.Drawing.Point(515, 155);
+            this.btnUpdatepro.Location = new System.Drawing.Point(499, 170);
             this.btnUpdatepro.Name = "btnUpdatepro";
             this.btnUpdatepro.Size = new System.Drawing.Size(108, 33);
             this.btnUpdatepro.TabIndex = 15;
@@ -253,7 +262,7 @@
             // 
             // txtsearchpro
             // 
-            this.txtsearchpro.Location = new System.Drawing.Point(981, 185);
+            this.txtsearchpro.Location = new System.Drawing.Point(807, 189);
             this.txtsearchpro.Name = "txtsearchpro";
             this.txtsearchpro.Size = new System.Drawing.Size(104, 20);
             this.txtsearchpro.TabIndex = 18;
@@ -283,7 +292,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(96)))), ((int)(((byte)(96)))));
-            this.label7.Location = new System.Drawing.Point(786, 146);
+            this.label7.Location = new System.Drawing.Point(928, 188);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(105, 19);
             this.label7.TabIndex = 21;
@@ -296,16 +305,28 @@
             this.cbSortpro.Items.AddRange(new object[] {
             "A -> Z",
             "Kind"});
-            this.cbSortpro.Location = new System.Drawing.Point(904, 146);
+            this.cbSortpro.Location = new System.Drawing.Point(1042, 188);
             this.cbSortpro.Name = "cbSortpro";
-            this.cbSortpro.Size = new System.Drawing.Size(181, 21);
+            this.cbSortpro.Size = new System.Drawing.Size(72, 21);
             this.cbSortpro.TabIndex = 22;
             this.cbSortpro.SelectedIndexChanged += new System.EventHandler(this.cbSortpro_SelectedIndexChanged);
+            // 
+            // cboSortpro1
+            // 
+            this.cboSortpro1.FormattingEnabled = true;
+            this.cboSortpro1.Items.AddRange(new object[] {
+            "Kind"});
+            this.cboSortpro1.Location = new System.Drawing.Point(1120, 188);
+            this.cboSortpro1.Name = "cboSortpro1";
+            this.cboSortpro1.Size = new System.Drawing.Size(72, 21);
+            this.cboSortpro1.TabIndex = 23;
             // 
             // uc_product
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.cboSortpro1);
             this.Controls.Add(this.cbSortpro);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtNotepro);
@@ -362,5 +383,6 @@
         private System.Windows.Forms.TextBox txtNotepro;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cbSortpro;
+        private System.Windows.Forms.ComboBox cboSortpro1;
     }
 }

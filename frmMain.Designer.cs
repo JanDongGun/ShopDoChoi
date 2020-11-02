@@ -42,6 +42,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.ptbExit = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -49,13 +50,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panelControls = new System.Windows.Forms.Panel();
-            this.ptbExit = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbExit)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -84,10 +84,11 @@
             this.btnUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUser.ForeColor = System.Drawing.Color.White;
             this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
-            this.btnUser.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnUser.Location = new System.Drawing.Point(12, 467);
+            this.btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUser.Location = new System.Drawing.Point(5, 467);
             this.btnUser.Name = "btnUser";
-            this.btnUser.Size = new System.Drawing.Size(203, 60);
+            this.btnUser.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnUser.Size = new System.Drawing.Size(206, 60);
             this.btnUser.TabIndex = 11;
             this.btnUser.Text = "   User";
             this.btnUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -101,10 +102,11 @@
             this.btnCustomer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomer.ForeColor = System.Drawing.Color.White;
             this.btnCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnCustomer.Image")));
-            this.btnCustomer.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnCustomer.Location = new System.Drawing.Point(12, 533);
+            this.btnCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCustomer.Location = new System.Drawing.Point(5, 533);
             this.btnCustomer.Name = "btnCustomer";
-            this.btnCustomer.Size = new System.Drawing.Size(203, 60);
+            this.btnCustomer.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnCustomer.Size = new System.Drawing.Size(206, 60);
             this.btnCustomer.TabIndex = 10;
             this.btnCustomer.Text = "  Customer";
             this.btnCustomer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -118,10 +120,11 @@
             this.btnAccount.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccount.ForeColor = System.Drawing.Color.White;
             this.btnAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnAccount.Image")));
-            this.btnAccount.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnAccount.Location = new System.Drawing.Point(12, 599);
+            this.btnAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAccount.Location = new System.Drawing.Point(5, 599);
             this.btnAccount.Name = "btnAccount";
-            this.btnAccount.Size = new System.Drawing.Size(203, 60);
+            this.btnAccount.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnAccount.Size = new System.Drawing.Size(206, 60);
             this.btnAccount.TabIndex = 9;
             this.btnAccount.Text = "   Account";
             this.btnAccount.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -135,10 +138,11 @@
             this.btnProduct.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProduct.ForeColor = System.Drawing.Color.White;
             this.btnProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnProduct.Image")));
-            this.btnProduct.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnProduct.Location = new System.Drawing.Point(12, 401);
+            this.btnProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProduct.Location = new System.Drawing.Point(5, 401);
             this.btnProduct.Name = "btnProduct";
-            this.btnProduct.Size = new System.Drawing.Size(203, 60);
+            this.btnProduct.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnProduct.Size = new System.Drawing.Size(206, 60);
             this.btnProduct.TabIndex = 8;
             this.btnProduct.Text = "   Product";
             this.btnProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -152,10 +156,11 @@
             this.btnKind.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKind.ForeColor = System.Drawing.Color.White;
             this.btnKind.Image = ((System.Drawing.Image)(resources.GetObject("btnKind.Image")));
-            this.btnKind.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnKind.Location = new System.Drawing.Point(12, 335);
+            this.btnKind.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKind.Location = new System.Drawing.Point(5, 335);
             this.btnKind.Name = "btnKind";
-            this.btnKind.Size = new System.Drawing.Size(203, 60);
+            this.btnKind.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnKind.Size = new System.Drawing.Size(206, 60);
             this.btnKind.TabIndex = 7;
             this.btnKind.Text = "   Kind";
             this.btnKind.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -169,10 +174,11 @@
             this.btnBill.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBill.ForeColor = System.Drawing.Color.White;
             this.btnBill.Image = ((System.Drawing.Image)(resources.GetObject("btnBill.Image")));
-            this.btnBill.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnBill.Location = new System.Drawing.Point(12, 269);
+            this.btnBill.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBill.Location = new System.Drawing.Point(5, 269);
             this.btnBill.Name = "btnBill";
-            this.btnBill.Size = new System.Drawing.Size(203, 60);
+            this.btnBill.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnBill.Size = new System.Drawing.Size(206, 60);
             this.btnBill.TabIndex = 6;
             this.btnBill.Text = "   Bill";
             this.btnBill.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -186,10 +192,11 @@
             this.btnSell.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSell.ForeColor = System.Drawing.Color.White;
             this.btnSell.Image = ((System.Drawing.Image)(resources.GetObject("btnSell.Image")));
-            this.btnSell.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnSell.Location = new System.Drawing.Point(12, 203);
+            this.btnSell.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSell.Location = new System.Drawing.Point(5, 203);
             this.btnSell.Name = "btnSell";
-            this.btnSell.Size = new System.Drawing.Size(203, 60);
+            this.btnSell.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnSell.Size = new System.Drawing.Size(206, 60);
             this.btnSell.TabIndex = 5;
             this.btnSell.Text = "   Sell Toys";
             this.btnSell.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -203,7 +210,7 @@
             this.panelside.ForeColor = System.Drawing.Color.White;
             this.panelside.Location = new System.Drawing.Point(1, 137);
             this.panelside.Name = "panelside";
-            this.panelside.Size = new System.Drawing.Size(10, 60);
+            this.panelside.Size = new System.Drawing.Size(6, 60);
             this.panelside.TabIndex = 4;
             // 
             // btnHome
@@ -213,10 +220,11 @@
             this.btnHome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
-            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnHome.Location = new System.Drawing.Point(12, 137);
+            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.Location = new System.Drawing.Point(5, 137);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(203, 60);
+            this.btnHome.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnHome.Size = new System.Drawing.Size(206, 60);
             this.btnHome.TabIndex = 4;
             this.btnHome.Text = "   Home";
             this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -251,6 +259,17 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(985, 36);
             this.panel3.TabIndex = 2;
+            // 
+            // ptbExit
+            // 
+            this.ptbExit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.ptbExit.Image = ((System.Drawing.Image)(resources.GetObject("ptbExit.Image")));
+            this.ptbExit.Location = new System.Drawing.Point(939, 0);
+            this.ptbExit.Name = "ptbExit";
+            this.ptbExit.Size = new System.Drawing.Size(46, 36);
+            this.ptbExit.TabIndex = 2;
+            this.ptbExit.TabStop = false;
+            this.ptbExit.Click += new System.EventHandler(this.ptbExit_Click);
             // 
             // label2
             // 
@@ -328,17 +347,6 @@
             this.panelControls.Size = new System.Drawing.Size(985, 589);
             this.panelControls.TabIndex = 4;
             // 
-            // ptbExit
-            // 
-            this.ptbExit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.ptbExit.Image = ((System.Drawing.Image)(resources.GetObject("ptbExit.Image")));
-            this.ptbExit.Location = new System.Drawing.Point(939, 0);
-            this.ptbExit.Name = "ptbExit";
-            this.ptbExit.Size = new System.Drawing.Size(46, 36);
-            this.ptbExit.TabIndex = 2;
-            this.ptbExit.TabStop = false;
-            this.ptbExit.Click += new System.EventHandler(this.ptbExit_Click);
-            // 
             // frmMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -358,9 +366,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbExit)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExit)).EndInit();
             this.ResumeLayout(false);
 
         }
