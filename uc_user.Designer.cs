@@ -42,93 +42,101 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnUpdateus = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnXoaus
             // 
             this.btnXoaus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(176)))), ((int)(((byte)(211)))));
-            this.btnXoaus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoaus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoaus.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoaus.ForeColor = System.Drawing.Color.Transparent;
-            this.btnXoaus.Location = new System.Drawing.Point(639, 575);
+            this.btnXoaus.Location = new System.Drawing.Point(355, 520);
             this.btnXoaus.Name = "btnXoaus";
-            this.btnXoaus.Size = new System.Drawing.Size(174, 39);
+            this.btnXoaus.Size = new System.Drawing.Size(108, 33);
             this.btnXoaus.TabIndex = 11;
-            this.btnXoaus.Text = "Xóa";
+            this.btnXoaus.Text = "Delete";
             this.btnXoaus.UseVisualStyleBackColor = false;
+            this.btnXoaus.Click += new System.EventHandler(this.btnXoaus_Click);
             // 
             // btnThemus
             // 
             this.btnThemus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(176)))), ((int)(((byte)(211)))));
-            this.btnThemus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThemus.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemus.ForeColor = System.Drawing.Color.White;
-            this.btnThemus.Location = new System.Drawing.Point(172, 575);
+            this.btnThemus.Location = new System.Drawing.Point(233, 191);
             this.btnThemus.Name = "btnThemus";
-            this.btnThemus.Size = new System.Drawing.Size(162, 39);
+            this.btnThemus.Size = new System.Drawing.Size(108, 33);
             this.btnThemus.TabIndex = 10;
-            this.btnThemus.Text = "Thêm";
+            this.btnThemus.Text = "Add";
             this.btnThemus.UseVisualStyleBackColor = false;
             // 
             // btnSuaus
             // 
             this.btnSuaus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(176)))), ((int)(((byte)(211)))));
-            this.btnSuaus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuaus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSuaus.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSuaus.ForeColor = System.Drawing.Color.White;
-            this.btnSuaus.Location = new System.Drawing.Point(407, 575);
+            this.btnSuaus.Location = new System.Drawing.Point(233, 520);
             this.btnSuaus.Name = "btnSuaus";
-            this.btnSuaus.Size = new System.Drawing.Size(171, 39);
+            this.btnSuaus.Size = new System.Drawing.Size(108, 33);
             this.btnSuaus.TabIndex = 9;
-            this.btnSuaus.Text = "Sửa";
+            this.btnSuaus.Text = "Edit";
             this.btnSuaus.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(96)))), ((int)(((byte)(96)))));
             this.label1.Location = new System.Drawing.Point(83, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 24);
+            this.label1.Size = new System.Drawing.Size(126, 19);
             this.label1.TabIndex = 12;
-            this.label1.Text = "Tên tài khoản";
+            this.label1.Text = "Account name";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(96)))), ((int)(((byte)(96)))));
             this.label2.Location = new System.Drawing.Point(83, 100);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 24);
+            this.label2.Size = new System.Drawing.Size(110, 19);
             this.label2.TabIndex = 13;
-            this.label2.Text = "Ngày tạo";
+            this.label2.Text = "Date created";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(96)))), ((int)(((byte)(96)))));
             this.label3.Location = new System.Drawing.Point(83, 148);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 24);
+            this.label3.Size = new System.Drawing.Size(80, 19);
             this.label3.TabIndex = 14;
             this.label3.Text = "Password";
             // 
             // txtTenTKus
             // 
-            this.txtTenTKus.Location = new System.Drawing.Point(248, 53);
+            this.txtTenTKus.Location = new System.Drawing.Point(233, 56);
             this.txtTenTKus.Name = "txtTenTKus";
-            this.txtTenTKus.Size = new System.Drawing.Size(303, 20);
+            this.txtTenTKus.Size = new System.Drawing.Size(230, 20);
             this.txtTenTKus.TabIndex = 15;
             // 
             // txtPassus
             // 
-            this.txtPassus.Location = new System.Drawing.Point(248, 153);
+            this.txtPassus.Location = new System.Drawing.Point(233, 148);
             this.txtPassus.Name = "txtPassus";
-            this.txtPassus.Size = new System.Drawing.Size(303, 20);
+            this.txtPassus.Size = new System.Drawing.Size(230, 20);
             this.txtPassus.TabIndex = 16;
             // 
             // txtNgaytaous
             // 
-            this.txtNgaytaous.Location = new System.Drawing.Point(248, 100);
+            this.txtNgaytaous.Location = new System.Drawing.Point(233, 103);
             this.txtNgaytaous.Name = "txtNgaytaous";
-            this.txtNgaytaous.Size = new System.Drawing.Size(303, 20);
+            this.txtNgaytaous.Size = new System.Drawing.Size(230, 20);
             this.txtNgaytaous.TabIndex = 17;
             // 
             // listView1
@@ -138,7 +146,7 @@
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4});
-            this.listView1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(3, 253);
@@ -155,7 +163,7 @@
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Tên tài khoản";
+            this.columnHeader2.Text = "Account name";
             this.columnHeader2.Width = 310;
             // 
             // columnHeader3
@@ -165,13 +173,27 @@
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Ngày tạo";
+            this.columnHeader4.Text = "Date created";
             this.columnHeader4.Width = 464;
+            // 
+            // btnUpdateus
+            // 
+            this.btnUpdateus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(176)))), ((int)(((byte)(211)))));
+            this.btnUpdateus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateus.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateus.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateus.Location = new System.Drawing.Point(355, 191);
+            this.btnUpdateus.Name = "btnUpdateus";
+            this.btnUpdateus.Size = new System.Drawing.Size(108, 33);
+            this.btnUpdateus.TabIndex = 19;
+            this.btnUpdateus.Text = "Update";
+            this.btnUpdateus.UseVisualStyleBackColor = false;
             // 
             // uc_user
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btnUpdateus);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.txtNgaytaous);
             this.Controls.Add(this.txtPassus);
@@ -206,5 +228,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.Button btnUpdateus;
     }
 }

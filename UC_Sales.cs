@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyShopDoChoi.Usercontrol
+namespace QuanLyShopDoChoi
 {
-    public partial class uc_user : UserControl
+    public partial class UC_Sales : UserControl
     {
-        public uc_user()
+        public UC_Sales()
         {
             InitializeComponent();
-        }
-
-        private void btnXoaus_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
