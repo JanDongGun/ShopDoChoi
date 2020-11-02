@@ -145,11 +145,7 @@
             this.btnXoapro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoapro.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoapro.ForeColor = System.Drawing.Color.Transparent;
-<<<<<<< HEAD
             this.btnXoapro.Location = new System.Drawing.Point(533, 520);
-=======
-            this.btnXoapro.Location = new System.Drawing.Point(499, 520);
->>>>>>> c44ac39dc952ded6710d041d54bd68874174fced
             this.btnXoapro.Name = "btnXoapro";
             this.btnXoapro.Size = new System.Drawing.Size(108, 33);
             this.btnXoapro.TabIndex = 8;
@@ -163,11 +159,7 @@
             this.btnThempro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThempro.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThempro.ForeColor = System.Drawing.Color.White;
-<<<<<<< HEAD
             this.btnThempro.Location = new System.Drawing.Point(379, 155);
-=======
-            this.btnThempro.Location = new System.Drawing.Point(403, 170);
->>>>>>> c44ac39dc952ded6710d041d54bd68874174fced
             this.btnThempro.Name = "btnThempro";
             this.btnThempro.Size = new System.Drawing.Size(108, 33);
             this.btnThempro.TabIndex = 7;
@@ -212,11 +204,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(96)))), ((int)(((byte)(96)))));
-            this.label5.Location = new System.Drawing.Point(649, 188);
+            this.label5.Location = new System.Drawing.Point(662, 191);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 19);
+            this.label5.Size = new System.Drawing.Size(68, 17);
             this.label5.TabIndex = 13;
             this.label5.Text = "Search By";
             // 
@@ -234,7 +226,7 @@
             this.btnUpdatepro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdatepro.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdatepro.ForeColor = System.Drawing.Color.White;
-            this.btnUpdatepro.Location = new System.Drawing.Point(499, 170);
+            this.btnUpdatepro.Location = new System.Drawing.Point(499, 155);
             this.btnUpdatepro.Name = "btnUpdatepro";
             this.btnUpdatepro.Size = new System.Drawing.Size(108, 33);
             this.btnUpdatepro.TabIndex = 15;
@@ -290,13 +282,13 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(96)))), ((int)(((byte)(96)))));
-            this.label7.Location = new System.Drawing.Point(928, 188);
+            this.label7.Location = new System.Drawing.Point(978, 191);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(105, 19);
+            this.label7.Size = new System.Drawing.Size(55, 17);
             this.label7.TabIndex = 21;
-            this.label7.Text = "Sort by nhan";
+            this.label7.Text = "Sort by ";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // cbSortpro
@@ -305,7 +297,7 @@
             this.cbSortpro.Items.AddRange(new object[] {
             "A -> Z",
             "Kind"});
-            this.cbSortpro.Location = new System.Drawing.Point(1042, 188);
+            this.cbSortpro.Location = new System.Drawing.Point(1041, 188);
             this.cbSortpro.Name = "cbSortpro";
             this.cbSortpro.Size = new System.Drawing.Size(72, 21);
             this.cbSortpro.TabIndex = 22;
@@ -316,7 +308,7 @@
             this.cboSortpro1.FormattingEnabled = true;
             this.cboSortpro1.Items.AddRange(new object[] {
             "Kind"});
-            this.cboSortpro1.Location = new System.Drawing.Point(1120, 188);
+            this.cboSortpro1.Location = new System.Drawing.Point(1119, 188);
             this.cboSortpro1.Name = "cboSortpro1";
             this.cboSortpro1.Size = new System.Drawing.Size(72, 21);
             this.cboSortpro1.TabIndex = 23;
