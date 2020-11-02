@@ -41,5 +41,10 @@ namespace QuanLyShopDoChoi.Usercontrol
         {
 
         }
+
+        private void uc_product_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

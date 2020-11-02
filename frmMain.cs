@@ -69,12 +69,6 @@ namespace QuanLyShopDoChoi
             AddControlsToPanel(up);
         }
 
-        private void btnUser_Click(object sender, EventArgs e)
-        {
-            moveSidePanel(btnUser);
-            uc_user us = new uc_user();
-            AddControlsToPanel(us);
-        }
 
         private void btnCustomer_Click(object sender, EventArgs e)
         {

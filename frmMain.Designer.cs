@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnUser = new System.Windows.Forms.Button();
             this.btnCustomer = new System.Windows.Forms.Button();
             this.btnAccount = new System.Windows.Forms.Button();
             this.btnProduct = new System.Windows.Forms.Button();
@@ -61,7 +60,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(176)))), ((int)(((byte)(211)))));
-            this.panel1.Controls.Add(this.btnUser);
             this.panel1.Controls.Add(this.btnCustomer);
             this.panel1.Controls.Add(this.btnAccount);
             this.panel1.Controls.Add(this.btnProduct);
@@ -77,24 +75,6 @@
             this.panel1.Size = new System.Drawing.Size(215, 720);
             this.panel1.TabIndex = 0;
             // 
-            // btnUser
-            // 
-            this.btnUser.FlatAppearance.BorderSize = 0;
-            this.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUser.ForeColor = System.Drawing.Color.White;
-            this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
-            this.btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUser.Location = new System.Drawing.Point(5, 467);
-            this.btnUser.Name = "btnUser";
-            this.btnUser.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnUser.Size = new System.Drawing.Size(206, 60);
-            this.btnUser.TabIndex = 11;
-            this.btnUser.Text = "   User";
-            this.btnUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnUser.UseVisualStyleBackColor = true;
-            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
-            // 
             // btnCustomer
             // 
             this.btnCustomer.FlatAppearance.BorderSize = 0;
@@ -103,7 +83,7 @@
             this.btnCustomer.ForeColor = System.Drawing.Color.White;
             this.btnCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnCustomer.Image")));
             this.btnCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCustomer.Location = new System.Drawing.Point(5, 533);
+            this.btnCustomer.Location = new System.Drawing.Point(1, 467);
             this.btnCustomer.Name = "btnCustomer";
             this.btnCustomer.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnCustomer.Size = new System.Drawing.Size(206, 60);
@@ -121,7 +101,7 @@
             this.btnAccount.ForeColor = System.Drawing.Color.White;
             this.btnAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnAccount.Image")));
             this.btnAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAccount.Location = new System.Drawing.Point(5, 599);
+            this.btnAccount.Location = new System.Drawing.Point(1, 533);
             this.btnAccount.Name = "btnAccount";
             this.btnAccount.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnAccount.Size = new System.Drawing.Size(206, 60);
@@ -383,7 +363,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelside;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnUser;
         private System.Windows.Forms.Button btnCustomer;
         private System.Windows.Forms.Button btnAccount;
         private System.Windows.Forms.Button btnProduct;

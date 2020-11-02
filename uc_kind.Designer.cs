@@ -42,20 +42,21 @@
             // txtTenLoaiDC
             // 
             this.txtTenLoaiDC.BackColor = System.Drawing.Color.White;
+            this.txtTenLoaiDC.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenLoaiDC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(176)))), ((int)(((byte)(211)))));
-            this.txtTenLoaiDC.Location = new System.Drawing.Point(408, 60);
+            this.txtTenLoaiDC.Location = new System.Drawing.Point(408, 56);
             this.txtTenLoaiDC.Name = "txtTenLoaiDC";
-            this.txtTenLoaiDC.Size = new System.Drawing.Size(237, 22);
+            this.txtTenLoaiDC.Size = new System.Drawing.Size(237, 27);
             this.txtTenLoaiDC.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(96)))), ((int)(((byte)(96)))));
             this.label1.Location = new System.Drawing.Point(290, 59);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 19);
+            this.label1.Size = new System.Drawing.Size(112, 21);
             this.label1.TabIndex = 1;
             this.label1.Text = "Name of toys";
             // 
@@ -65,13 +66,13 @@
             this.lvKind.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2});
-            this.lvKind.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvKind.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvKind.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(176)))), ((int)(((byte)(211)))));
             this.lvKind.GridLines = true;
             this.lvKind.HideSelection = false;
-            this.lvKind.Location = new System.Drawing.Point(6, 167);
+            this.lvKind.Location = new System.Drawing.Point(0, 167);
             this.lvKind.Name = "lvKind";
-            this.lvKind.Size = new System.Drawing.Size(1192, 312);
+            this.lvKind.Size = new System.Drawing.Size(1198, 312);
             this.lvKind.TabIndex = 2;
             this.lvKind.UseCompatibleStateImageBehavior = false;
             this.lvKind.View = System.Windows.Forms.View.Details;
