@@ -28,6 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            "1",
+            "Xe máy",
+            "Xe",
+            "800.000VND",
+            "1525 cái"}, -1);
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            "2",
+            "Bộ lắm ráp tàu Thousand Sunny",
+            "Hạng nặng",
+            "56.999.999VND",
+            "10 cái"}, -1);
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
+            "3",
+            "Búp bê lọ lem",
+            "Búp bê",
+            "6.999.999VND",
+            "673 cái"}, -1);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -102,6 +120,10 @@
             this.listView1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
+            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1,
+            listViewItem2,
+            listViewItem3});
             this.listView1.Location = new System.Drawing.Point(0, 257);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(1198, 236);
@@ -219,6 +241,11 @@
             // 
             this.cbsearchpro.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbsearchpro.FormattingEnabled = true;
+            this.cbsearchpro.Items.AddRange(new object[] {
+            "ID",
+            "Toy title",
+            "Kind of toy",
+            "Price"});
             this.cbsearchpro.Location = new System.Drawing.Point(688, 219);
             this.cbsearchpro.Name = "cbsearchpro";
             this.cbsearchpro.Size = new System.Drawing.Size(61, 24);
@@ -252,6 +279,10 @@
             // 
             this.cbloaidcpro.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbloaidcpro.FormattingEnabled = true;
+            this.cbloaidcpro.Items.AddRange(new object[] {
+            "Xe",
+            "Hạng nặng",
+            "Búp bê"});
             this.cbloaidcpro.Location = new System.Drawing.Point(568, 19);
             this.cbloaidcpro.Name = "cbloaidcpro";
             this.cbloaidcpro.Size = new System.Drawing.Size(186, 29);
@@ -291,11 +322,11 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(96)))), ((int)(((byte)(96)))));
-            this.label7.Location = new System.Drawing.Point(889, 221);
+            this.label7.Location = new System.Drawing.Point(916, 221);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 17);
+            this.label7.Size = new System.Drawing.Size(27, 17);
             this.label7.TabIndex = 21;
-            this.label7.Text = "Sort by ";
+            this.label7.Text = "List";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // cbSortpro
@@ -304,7 +335,8 @@
             this.cbSortpro.FormattingEnabled = true;
             this.cbSortpro.Items.AddRange(new object[] {
             "A -> Z",
-            "Kind"});
+            "Kind",
+            "Toys sold"});
             this.cbSortpro.Location = new System.Drawing.Point(949, 217);
             this.cbSortpro.Name = "cbSortpro";
             this.cbSortpro.Size = new System.Drawing.Size(72, 25);
@@ -316,7 +348,8 @@
             this.cboSortpro1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboSortpro1.FormattingEnabled = true;
             this.cboSortpro1.Items.AddRange(new object[] {
-            "Kind"});
+            "ID",
+            "Kind of Toy"});
             this.cboSortpro1.Location = new System.Drawing.Point(1027, 217);
             this.cboSortpro1.Name = "cboSortpro1";
             this.cboSortpro1.Size = new System.Drawing.Size(72, 25);

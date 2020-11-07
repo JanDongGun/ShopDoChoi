@@ -28,6 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            "1",
+            "Xe "}, -1);
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            "2",
+            "Hạng nặng"}, -1);
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
+            "3",
+            "Búp bê"}, -1);
             this.txtTenLoaiDC = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lvKind = new System.Windows.Forms.ListView();
@@ -54,11 +63,12 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(96)))), ((int)(((byte)(96)))));
-            this.label1.Location = new System.Drawing.Point(290, 59);
+            this.label1.Location = new System.Drawing.Point(299, 59);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 21);
+            this.label1.Size = new System.Drawing.Size(91, 21);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Name of toys";
+            this.label1.Text = "Kind of toy";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // lvKind
             // 
@@ -70,6 +80,10 @@
             this.lvKind.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(176)))), ((int)(((byte)(211)))));
             this.lvKind.GridLines = true;
             this.lvKind.HideSelection = false;
+            this.lvKind.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1,
+            listViewItem2,
+            listViewItem3});
             this.lvKind.Location = new System.Drawing.Point(0, 167);
             this.lvKind.Name = "lvKind";
             this.lvKind.Size = new System.Drawing.Size(1198, 312);
@@ -84,7 +98,7 @@
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Name of toys";
+            this.columnHeader2.Text = "Kind of toy";
             this.columnHeader2.Width = 512;
             // 
             // btnSuakind

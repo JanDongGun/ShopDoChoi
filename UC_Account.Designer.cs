@@ -28,6 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            "Admin",
+            "123",
+            "PRO VIP",
+            "0987654321",
+            "Manage"}, -1);
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            "NV1",
+            "456",
+            "VIP VIP PRO",
+            "0987878765",
+            "Staff"}, -1);
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
+            "NV2",
+            "789",
+            "PRO PRO",
+            "0987865464",
+            "Staff"}, -1);
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.txtSDT = new System.Windows.Forms.TextBox();
@@ -253,6 +271,10 @@
             this.lvCustomer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvCustomer.GridLines = true;
             this.lvCustomer.HideSelection = false;
+            this.lvCustomer.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1,
+            listViewItem2,
+            listViewItem3});
             this.lvCustomer.Location = new System.Drawing.Point(0, 261);
             this.lvCustomer.Name = "lvCustomer";
             this.lvCustomer.Scrollable = false;

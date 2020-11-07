@@ -82,6 +82,11 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "provip",
+            "vippro",
+            "pro123",
+            "vip321"});
             this.comboBox2.Location = new System.Drawing.Point(613, 82);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(198, 29);

@@ -28,6 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            "1",
+            "Nguyen Ngoc Minh",
+            "999 Bui Thi Xuan",
+            "0987554433"}, -1);
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            "2",
+            "Tran Minh An",
+            "1000 Bui Thi Xuan",
+            "0984657675"}, -1);
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
+            "3",
+            "Hoang Ngoc Tan",
+            "1001 Bui Thi Xuan",
+            "0987123456"}, -1);
             this.lvCustomer = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -60,6 +75,10 @@
             this.lvCustomer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvCustomer.GridLines = true;
             this.lvCustomer.HideSelection = false;
+            this.lvCustomer.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1,
+            listViewItem2,
+            listViewItem3});
             this.lvCustomer.Location = new System.Drawing.Point(0, 262);
             this.lvCustomer.Name = "lvCustomer";
             this.lvCustomer.Scrollable = false;
