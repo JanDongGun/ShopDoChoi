@@ -36,5 +36,15 @@ namespace QuanLyShopDoChoi
         {
 
         }
+
+        private void lvCustomer_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

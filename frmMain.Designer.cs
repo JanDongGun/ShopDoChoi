@@ -83,7 +83,7 @@
             this.btnCustomer.ForeColor = System.Drawing.Color.White;
             this.btnCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnCustomer.Image")));
             this.btnCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCustomer.Location = new System.Drawing.Point(1, 467);
+            this.btnCustomer.Location = new System.Drawing.Point(7, 467);
             this.btnCustomer.Name = "btnCustomer";
             this.btnCustomer.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnCustomer.Size = new System.Drawing.Size(206, 60);
@@ -101,7 +101,7 @@
             this.btnAccount.ForeColor = System.Drawing.Color.White;
             this.btnAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnAccount.Image")));
             this.btnAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAccount.Location = new System.Drawing.Point(1, 533);
+            this.btnAccount.Location = new System.Drawing.Point(6, 533);
             this.btnAccount.Name = "btnAccount";
             this.btnAccount.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnAccount.Size = new System.Drawing.Size(206, 60);
@@ -119,7 +119,7 @@
             this.btnProduct.ForeColor = System.Drawing.Color.White;
             this.btnProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnProduct.Image")));
             this.btnProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProduct.Location = new System.Drawing.Point(5, 401);
+            this.btnProduct.Location = new System.Drawing.Point(4, 401);
             this.btnProduct.Name = "btnProduct";
             this.btnProduct.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnProduct.Size = new System.Drawing.Size(206, 60);
