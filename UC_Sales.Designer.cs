@@ -28,6 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            "Xe máy",
+            "1",
+            "80.000"}, -1);
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            "Bộ lắp ráp tàu Thousand Sunny",
+            "2",
+            "120.000"}, -1);
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
+            "Búp bê lọ lem",
+            "1",
+            "200.000"}, -1);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -88,6 +100,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(138, 185);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
@@ -152,6 +165,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.Enabled = false;
             this.textBox3.Location = new System.Drawing.Point(468, 242);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
@@ -198,6 +212,10 @@
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
+            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1,
+            listViewItem2,
+            listViewItem3});
             this.listView1.Location = new System.Drawing.Point(10, 0);
             this.listView1.Name = "listView1";
             this.listView1.Scrollable = false;
@@ -274,9 +292,10 @@
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(96)))), ((int)(((byte)(96)))));
             this.label9.Location = new System.Drawing.Point(144, 96);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(32, 23);
+            this.label9.Size = new System.Drawing.Size(81, 23);
             this.label9.TabIndex = 16;
-            this.label9.Text = "00";
+            this.label9.Text = "400.000";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
@@ -330,7 +349,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(55, 38);
             this.button2.TabIndex = 16;
-            this.button2.Text = "-";
+            this.button2.Text = "+";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // button1
@@ -345,7 +364,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(55, 38);
             this.button1.TabIndex = 15;
-            this.button1.Text = "+";
+            this.button1.Text = "-";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // panel9
