@@ -34,7 +34,6 @@
             this.btnAccount = new System.Windows.Forms.Button();
             this.btnProduct = new System.Windows.Forms.Button();
             this.btnKind = new System.Windows.Forms.Button();
-            this.btnBill = new System.Windows.Forms.Button();
             this.btnSell = new System.Windows.Forms.Button();
             this.panelside = new System.Windows.Forms.Panel();
             this.btnHome = new System.Windows.Forms.Button();
@@ -64,7 +63,6 @@
             this.panel1.Controls.Add(this.btnAccount);
             this.panel1.Controls.Add(this.btnProduct);
             this.panel1.Controls.Add(this.btnKind);
-            this.panel1.Controls.Add(this.btnBill);
             this.panel1.Controls.Add(this.btnSell);
             this.panel1.Controls.Add(this.panelside);
             this.panel1.Controls.Add(this.btnHome);
@@ -74,6 +72,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(215, 720);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnCustomer
             // 
@@ -83,7 +82,7 @@
             this.btnCustomer.ForeColor = System.Drawing.Color.White;
             this.btnCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnCustomer.Image")));
             this.btnCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCustomer.Location = new System.Drawing.Point(7, 467);
+            this.btnCustomer.Location = new System.Drawing.Point(8, 401);
             this.btnCustomer.Name = "btnCustomer";
             this.btnCustomer.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnCustomer.Size = new System.Drawing.Size(206, 60);
@@ -101,7 +100,7 @@
             this.btnAccount.ForeColor = System.Drawing.Color.White;
             this.btnAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnAccount.Image")));
             this.btnAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAccount.Location = new System.Drawing.Point(6, 533);
+            this.btnAccount.Location = new System.Drawing.Point(7, 467);
             this.btnAccount.Name = "btnAccount";
             this.btnAccount.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnAccount.Size = new System.Drawing.Size(206, 60);
@@ -119,7 +118,7 @@
             this.btnProduct.ForeColor = System.Drawing.Color.White;
             this.btnProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnProduct.Image")));
             this.btnProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProduct.Location = new System.Drawing.Point(4, 401);
+            this.btnProduct.Location = new System.Drawing.Point(5, 335);
             this.btnProduct.Name = "btnProduct";
             this.btnProduct.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnProduct.Size = new System.Drawing.Size(206, 60);
@@ -137,7 +136,7 @@
             this.btnKind.ForeColor = System.Drawing.Color.White;
             this.btnKind.Image = ((System.Drawing.Image)(resources.GetObject("btnKind.Image")));
             this.btnKind.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKind.Location = new System.Drawing.Point(5, 335);
+            this.btnKind.Location = new System.Drawing.Point(6, 269);
             this.btnKind.Name = "btnKind";
             this.btnKind.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnKind.Size = new System.Drawing.Size(206, 60);
@@ -146,24 +145,6 @@
             this.btnKind.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnKind.UseVisualStyleBackColor = true;
             this.btnKind.Click += new System.EventHandler(this.btnKind_Click);
-            // 
-            // btnBill
-            // 
-            this.btnBill.FlatAppearance.BorderSize = 0;
-            this.btnBill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBill.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBill.ForeColor = System.Drawing.Color.White;
-            this.btnBill.Image = ((System.Drawing.Image)(resources.GetObject("btnBill.Image")));
-            this.btnBill.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBill.Location = new System.Drawing.Point(5, 269);
-            this.btnBill.Name = "btnBill";
-            this.btnBill.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnBill.Size = new System.Drawing.Size(206, 60);
-            this.btnBill.TabIndex = 6;
-            this.btnBill.Text = "   Bill";
-            this.btnBill.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBill.UseVisualStyleBackColor = true;
-            this.btnBill.Click += new System.EventHandler(this.btnBill_Click);
             // 
             // btnSell
             // 
@@ -367,7 +348,6 @@
         private System.Windows.Forms.Button btnAccount;
         private System.Windows.Forms.Button btnProduct;
         private System.Windows.Forms.Button btnKind;
-        private System.Windows.Forms.Button btnBill;
         private System.Windows.Forms.Button btnSell;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;

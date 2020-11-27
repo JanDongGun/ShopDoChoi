@@ -46,14 +46,6 @@ namespace QuanLyShopDoChoi
             UC_Sales ucs = new UC_Sales();
             AddControlsToPanel(ucs);
         }
-
-        private void btnBill_Click(object sender, EventArgs e)
-        {
-            moveSidePanel(btnBill);
-            UC_Bills ucb = new UC_Bills();
-            AddControlsToPanel(ucb);
-        }
-
         private void btnKind_Click(object sender, EventArgs e)
         {
             moveSidePanel(btnKind);
@@ -92,6 +84,11 @@ namespace QuanLyShopDoChoi
         private void ptbExit_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
