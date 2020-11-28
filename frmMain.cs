@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QuanLyShopDoChoi.Class;
 
 namespace QuanLyShopDoChoi
 {
@@ -19,7 +20,6 @@ namespace QuanLyShopDoChoi
             UC_Home uch = new UC_Home();
             AddControlsToPanel(uch);
         }
-
         private void moveSidePanel(Control btn)
         {
             panelside.Top = btn.Top;
@@ -78,15 +78,23 @@ namespace QuanLyShopDoChoi
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+            LoadMainForm();
+        }
+        private void LoadMainForm()
+        {
 
         }
-
         private void ptbExit_Click(object sender, EventArgs e)
         {
             this.Dispose();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }

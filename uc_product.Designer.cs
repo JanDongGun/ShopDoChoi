@@ -65,7 +65,7 @@
             this.cbsearchpro = new System.Windows.Forms.ComboBox();
             this.btnUpdatepro = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.cbloaidcpro = new System.Windows.Forms.ComboBox();
+            this.cboKind = new System.Windows.Forms.ComboBox();
             this.txtsearchpro = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtQty = new System.Windows.Forms.TextBox();
@@ -265,20 +265,20 @@
             this.label6.TabIndex = 16;
             this.label6.Text = "Kind of toy";
             // 
-            // cbloaidcpro
+            // cboKind
             // 
-            this.cbloaidcpro.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbloaidcpro.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbloaidcpro.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbloaidcpro.FormattingEnabled = true;
-            this.cbloaidcpro.Items.AddRange(new object[] {
+            this.cboKind.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboKind.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboKind.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboKind.FormattingEnabled = true;
+            this.cboKind.Items.AddRange(new object[] {
             "Xe",
             "Hạng nặng",
             "Búp bê"});
-            this.cbloaidcpro.Location = new System.Drawing.Point(570, 124);
-            this.cbloaidcpro.Name = "cbloaidcpro";
-            this.cbloaidcpro.Size = new System.Drawing.Size(186, 29);
-            this.cbloaidcpro.TabIndex = 17;
+            this.cboKind.Location = new System.Drawing.Point(570, 124);
+            this.cboKind.Name = "cboKind";
+            this.cboKind.Size = new System.Drawing.Size(186, 29);
+            this.cboKind.TabIndex = 17;
             // 
             // txtsearchpro
             // 
@@ -379,7 +379,7 @@
             this.Controls.Add(this.txtQty);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtsearchpro);
-            this.Controls.Add(this.cbloaidcpro);
+            this.Controls.Add(this.cboKind);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnUpdatepro);
             this.Controls.Add(this.cbsearchpro);
@@ -395,7 +395,7 @@
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(176)))), ((int)(((byte)(211)))));
             this.Name = "uc_product";
-            this.Size = new System.Drawing.Size(934, 538);
+            this.Size = new System.Drawing.Size(917, 521);
             this.Load += new System.EventHandler(this.uc_product_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -422,7 +422,7 @@
         private System.Windows.Forms.Button btnUpdatepro;
         private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox cbloaidcpro;
+        private System.Windows.Forms.ComboBox cboKind;
         private System.Windows.Forms.TextBox txtsearchpro;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.Label label4;

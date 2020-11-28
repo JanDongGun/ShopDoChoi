@@ -43,8 +43,8 @@
             this.ptbExit = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblRole = new System.Windows.Forms.Label();
+            this.lblUserName = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panelControls = new System.Windows.Forms.Panel();
@@ -218,8 +218,9 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(215, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(985, 36);
+            this.panel3.Size = new System.Drawing.Size(985, 41);
             this.panel3.TabIndex = 2;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // ptbExit
             // 
@@ -227,7 +228,7 @@
             this.ptbExit.Image = ((System.Drawing.Image)(resources.GetObject("ptbExit.Image")));
             this.ptbExit.Location = new System.Drawing.Point(939, 0);
             this.ptbExit.Name = "ptbExit";
-            this.ptbExit.Size = new System.Drawing.Size(46, 36);
+            this.ptbExit.Size = new System.Drawing.Size(46, 41);
             this.ptbExit.TabIndex = 2;
             this.ptbExit.TabStop = false;
             this.ptbExit.Click += new System.EventHandler(this.ptbExit_Click);
@@ -246,37 +247,37 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(176)))), ((int)(((byte)(211)))));
-            this.panel4.Controls.Add(this.label5);
-            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.lblRole);
+            this.panel4.Controls.Add(this.lblUserName);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.label1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(215, 36);
+            this.panel4.Location = new System.Drawing.Point(215, 41);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(985, 95);
             this.panel4.TabIndex = 3;
             // 
-            // label5
+            // lblRole
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(174, 55);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 19);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Admin";
+            this.lblRole.AutoSize = true;
+            this.lblRole.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRole.ForeColor = System.Drawing.Color.White;
+            this.lblRole.Location = new System.Drawing.Point(174, 55);
+            this.lblRole.Name = "lblRole";
+            this.lblRole.Size = new System.Drawing.Size(62, 19);
+            this.lblRole.TabIndex = 3;
+            this.lblRole.Text = "Admin";
             // 
-            // label4
+            // lblUserName
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(174, 20);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 19);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Ronaldo";
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserName.ForeColor = System.Drawing.Color.White;
+            this.lblUserName.Location = new System.Drawing.Point(174, 20);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(74, 19);
+            this.lblUserName.TabIndex = 2;
+            this.lblUserName.Text = "Ronaldo";
             // 
             // label3
             // 
@@ -303,9 +304,9 @@
             // panelControls
             // 
             this.panelControls.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControls.Location = new System.Drawing.Point(215, 131);
+            this.panelControls.Location = new System.Drawing.Point(215, 136);
             this.panelControls.Name = "panelControls";
-            this.panelControls.Size = new System.Drawing.Size(985, 589);
+            this.panelControls.Size = new System.Drawing.Size(985, 584);
             this.panelControls.TabIndex = 4;
             // 
             // frmMain
@@ -350,8 +351,8 @@
         private System.Windows.Forms.Button btnKind;
         private System.Windows.Forms.Button btnSell;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblRole;
+        private System.Windows.Forms.Label lblUserName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panelControls;
         private System.Windows.Forms.PictureBox ptbExit;
