@@ -36,13 +36,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtRole = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.dgvAccount = new System.Windows.Forms.DataGridView();
+            this.cboRole = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAccount)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,14 +126,6 @@
             this.label1.TabIndex = 31;
             this.label1.Text = "User name";
             // 
-            // txtRole
-            // 
-            this.txtRole.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRole.Location = new System.Drawing.Point(569, 193);
-            this.txtRole.Name = "txtRole";
-            this.txtRole.Size = new System.Drawing.Size(238, 27);
-            this.txtRole.TabIndex = 42;
-            // 
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(176)))), ((int)(((byte)(211)))));
@@ -207,14 +199,25 @@
             this.dgvAccount.Location = new System.Drawing.Point(0, 362);
             this.dgvAccount.MultiSelect = false;
             this.dgvAccount.Name = "dgvAccount";
+            this.dgvAccount.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvAccount.Size = new System.Drawing.Size(985, 227);
             this.dgvAccount.TabIndex = 56;
             this.dgvAccount.Click += new System.EventHandler(this.dgvAccount_Click);
+            // 
+            // cboRole
+            // 
+            this.cboRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboRole.FormattingEnabled = true;
+            this.cboRole.Location = new System.Drawing.Point(569, 191);
+            this.cboRole.Name = "cboRole";
+            this.cboRole.Size = new System.Drawing.Size(238, 30);
+            this.cboRole.TabIndex = 57;
             // 
             // UC_Account
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.cboRole);
             this.Controls.Add(this.dgvAccount);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.label4);
@@ -222,7 +225,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.txtRole);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtPhonenumber);
             this.Controls.Add(this.txtFullname);
@@ -249,12 +251,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtRole;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.DataGridView dgvAccount;
+        private System.Windows.Forms.ComboBox cboRole;
     }
 }

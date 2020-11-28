@@ -14,6 +14,17 @@ namespace QuanLyShopDoChoi
 {
     public partial class frmMain : Form
     {
+        public string Usname
+        {
+            get
+            {
+                return lblUserName.Text;
+            }
+            set
+            {
+                lblUserName.Text = value;
+            }
+        }
         public frmMain()
         {
             InitializeComponent();
@@ -82,6 +93,8 @@ namespace QuanLyShopDoChoi
         }
         private void LoadMainForm()
         {
+            string sql = "SELECT Role FROM Account WHERE Username = N'" + lblUserName.Text + "'";
+            lblRole.Text = Function.GetFieldValue(sql);
 
         }
         private void ptbExit_Click(object sender, EventArgs e)

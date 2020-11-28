@@ -16,6 +16,10 @@ namespace QuanLyShopDoChoi.Class
         {
             Con = new SqlConnection();
             Con.ConnectionString = "server=.; database = Toystore; Integrated Security = true;";
+            if(Con.State != ConnectionState.Open)
+            {
+                Con.Open();
+            }
         }
 
         public static void DisConnect()

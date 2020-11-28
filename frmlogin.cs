@@ -18,11 +18,6 @@ namespace QuanLyShopDoChoi
         {
             InitializeComponent();
         }
-        public string GetPass()
-        {
-            string pass = txtUsername.Text.ToString();
-            return pass; 
-        }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
            
@@ -41,9 +36,9 @@ namespace QuanLyShopDoChoi
             string query = "SELECT Username,Password FROM Account WHERE Username = '" + txtUsername.Text + "' and Password = '" + txtPassword.Text + "'";            
             if (Function.GetDataToTable(query).Rows.Count > 0)
             {
-                GetPass();
                 frmMain main = new frmMain();
-                main.ShowDialog();
+                main.Usname = txtUsername.Text;
+                main.ShowDialog();               
                 this.Close();
             }
             else
@@ -78,27 +73,11 @@ namespace QuanLyShopDoChoi
 
         private void frmlogin_Load_1(object sender, EventArgs e)
         {
-            LoadLogin();
-        }
-        private void LoadLogin()
-        {
             Function.Connect();
         }
-        private void btnLogin_Enter(object sender, EventArgs e)
+        private void btnLogin_Enter_1(object sender, EventArgs e)
         {
-            string query = "SELECT Username,Password FROM Account WHERE Username = '" + txtUsername.Text + "' and Password = '" + txtPassword.Text + "'";
-            if (Function.GetDataToTable(query).Rows.Count > 0)
-            {
-                GetPass();
-                frmMain main = new frmMain();
-                main.ShowDialog();
-                this.Close();
-            }
-            else
-            {
-                MessageBox.Show("Tài khoản hoặc mật khẩu không đúng. Vui lòng kiểm tra lại", "Đăng nhập thất bại");
-            }
+
         }
-        
     }
 }
