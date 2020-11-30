@@ -67,9 +67,6 @@ namespace QuanLyShopDoChoi
         }
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            string connectionString = "server=.; database = ToyStore; Integrated Security = true;";
-            SqlConnection sqlConnection = new SqlConnection(connectionString);
-            SqlCommand sqlCommand = sqlConnection.CreateCommand();
             if (txtUsername.Text != "" && txtPassword.Text != "" && txtFullname.Text != "" && txtPhonenumber.Text != "" && cboRole.Text != "")
             {
                 string sql = "update Account set Password= N'"+txtPassword.Text+"', Fullname= N'"+txtFullname.Text + "', Phonenumber= N'"+ txtPhonenumber.Text+"', Role= N'"+cboRole.Text+"' where Username= N'"+ txtUsername.Text + "'";
@@ -82,6 +79,7 @@ namespace QuanLyShopDoChoi
             else
             {
                 MessageBox.Show("Đã có lỗi xảy ra", "Cập nhật thất bại");
+                ClearText();
             }
         }                   
         private void dgvAccount_Click(object sender, EventArgs e)
@@ -113,7 +111,10 @@ namespace QuanLyShopDoChoi
             txtPassword.Text = "";
             txtFullname.Text = "";
             txtPhonenumber.Text = "";
-            cboRole.Text = "";
+        }
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            ClearText();
         }
     }
 }

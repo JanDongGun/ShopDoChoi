@@ -95,7 +95,18 @@ namespace QuanLyShopDoChoi
         {
             string sql = "SELECT Role FROM Account WHERE Username = N'" + lblUserName.Text + "'";
             lblRole.Text = Function.GetFieldValue(sql);
-
+            CheckRole();
+        }
+        private void CheckRole()
+        {
+            if (lblRole.Text == "Admin")
+            {
+                btnAccount.Enabled = true;
+            }
+            else
+            {
+                btnAccount.Enabled = false;
+            }
         }
         private void ptbExit_Click(object sender, EventArgs e)
         {
