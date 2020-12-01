@@ -8,18 +8,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QuanLyShopDoChoi.Class;
 
 namespace QuanLyShopDoChoi
 {
     public partial class frmMain : Form
     {
+        public string Usname
+        {
+            get
+            {
+                return lblUserName.Text;
+            }
+            set
+            {
+                lblUserName.Text = value;
+            }
+        }
         public frmMain()
         {
             InitializeComponent();
             UC_Home uch = new UC_Home();
             AddControlsToPanel(uch);
         }
-
         private void moveSidePanel(Control btn)
         {
             panelside.Top = btn.Top;
@@ -78,15 +89,36 @@ namespace QuanLyShopDoChoi
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-
+            LoadMainForm();
         }
-
+        private void LoadMainForm()
+        {
+            string sql = "SELECT Role FROM Account WHERE Username = N'" + lblUserName.Text + "'";
+            lblRole.Text = Function.GetFieldValue(sql);
+            CheckRole();
+        }
+        private void CheckRole()
+        {
+            if (lblRole.Text == "Admin")
+            {
+                btnAccount.Enabled = true;
+            }
+            else
+            {
+                btnAccount.Enabled = false;
+            }
+        }
         private void ptbExit_Click(object sender, EventArgs e)
         {
             this.Dispose();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }

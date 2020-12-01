@@ -8,7 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyShopDoChoi.Class;
+<<<<<<< HEAD
 
+=======
+>>>>>>> d94b5dd681a8189de6c73d080c5304e6b50ed2dc
 namespace QuanLyShopDoChoi.Usercontrol
 {
     public partial class uc_product : UserControl
@@ -54,6 +57,7 @@ namespace QuanLyShopDoChoi.Usercontrol
 
         private void uc_product_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             btnThem.Enabled = true;
             btnCapNhat.Enabled = false;
             btnXoa.Enabled = false;
@@ -128,6 +132,9 @@ namespace QuanLyShopDoChoi.Usercontrol
         {
             string sql = "SELECT * FROM Kind";
             Function.FillCombo(sql, cbKindToy, "KindID", "KindOfToy");
+=======
+            
+>>>>>>> d94b5dd681a8189de6c73d080c5304e6b50ed2dc
         }
     }
 }
