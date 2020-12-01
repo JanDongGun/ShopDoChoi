@@ -34,7 +34,6 @@
             this.btnAccount = new System.Windows.Forms.Button();
             this.btnProduct = new System.Windows.Forms.Button();
             this.btnKind = new System.Windows.Forms.Button();
-            this.btnBill = new System.Windows.Forms.Button();
             this.btnSell = new System.Windows.Forms.Button();
             this.panelside = new System.Windows.Forms.Panel();
             this.btnHome = new System.Windows.Forms.Button();
@@ -44,8 +43,8 @@
             this.ptbExit = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblRole = new System.Windows.Forms.Label();
+            this.lblUserName = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panelControls = new System.Windows.Forms.Panel();
@@ -64,7 +63,6 @@
             this.panel1.Controls.Add(this.btnAccount);
             this.panel1.Controls.Add(this.btnProduct);
             this.panel1.Controls.Add(this.btnKind);
-            this.panel1.Controls.Add(this.btnBill);
             this.panel1.Controls.Add(this.btnSell);
             this.panel1.Controls.Add(this.panelside);
             this.panel1.Controls.Add(this.btnHome);
@@ -74,6 +72,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(215, 720);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnCustomer
             // 
@@ -83,7 +82,7 @@
             this.btnCustomer.ForeColor = System.Drawing.Color.White;
             this.btnCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnCustomer.Image")));
             this.btnCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCustomer.Location = new System.Drawing.Point(7, 467);
+            this.btnCustomer.Location = new System.Drawing.Point(8, 401);
             this.btnCustomer.Name = "btnCustomer";
             this.btnCustomer.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnCustomer.Size = new System.Drawing.Size(206, 60);
@@ -101,7 +100,7 @@
             this.btnAccount.ForeColor = System.Drawing.Color.White;
             this.btnAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnAccount.Image")));
             this.btnAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAccount.Location = new System.Drawing.Point(6, 533);
+            this.btnAccount.Location = new System.Drawing.Point(7, 467);
             this.btnAccount.Name = "btnAccount";
             this.btnAccount.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnAccount.Size = new System.Drawing.Size(206, 60);
@@ -119,7 +118,7 @@
             this.btnProduct.ForeColor = System.Drawing.Color.White;
             this.btnProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnProduct.Image")));
             this.btnProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProduct.Location = new System.Drawing.Point(4, 401);
+            this.btnProduct.Location = new System.Drawing.Point(5, 335);
             this.btnProduct.Name = "btnProduct";
             this.btnProduct.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnProduct.Size = new System.Drawing.Size(206, 60);
@@ -137,7 +136,7 @@
             this.btnKind.ForeColor = System.Drawing.Color.White;
             this.btnKind.Image = ((System.Drawing.Image)(resources.GetObject("btnKind.Image")));
             this.btnKind.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKind.Location = new System.Drawing.Point(5, 335);
+            this.btnKind.Location = new System.Drawing.Point(6, 269);
             this.btnKind.Name = "btnKind";
             this.btnKind.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnKind.Size = new System.Drawing.Size(206, 60);
@@ -146,24 +145,6 @@
             this.btnKind.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnKind.UseVisualStyleBackColor = true;
             this.btnKind.Click += new System.EventHandler(this.btnKind_Click);
-            // 
-            // btnBill
-            // 
-            this.btnBill.FlatAppearance.BorderSize = 0;
-            this.btnBill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBill.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBill.ForeColor = System.Drawing.Color.White;
-            this.btnBill.Image = ((System.Drawing.Image)(resources.GetObject("btnBill.Image")));
-            this.btnBill.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBill.Location = new System.Drawing.Point(5, 269);
-            this.btnBill.Name = "btnBill";
-            this.btnBill.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnBill.Size = new System.Drawing.Size(206, 60);
-            this.btnBill.TabIndex = 6;
-            this.btnBill.Text = "   Bill";
-            this.btnBill.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBill.UseVisualStyleBackColor = true;
-            this.btnBill.Click += new System.EventHandler(this.btnBill_Click);
             // 
             // btnSell
             // 
@@ -237,8 +218,9 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(215, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(985, 36);
+            this.panel3.Size = new System.Drawing.Size(985, 41);
             this.panel3.TabIndex = 2;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // ptbExit
             // 
@@ -246,7 +228,7 @@
             this.ptbExit.Image = ((System.Drawing.Image)(resources.GetObject("ptbExit.Image")));
             this.ptbExit.Location = new System.Drawing.Point(939, 0);
             this.ptbExit.Name = "ptbExit";
-            this.ptbExit.Size = new System.Drawing.Size(46, 36);
+            this.ptbExit.Size = new System.Drawing.Size(46, 41);
             this.ptbExit.TabIndex = 2;
             this.ptbExit.TabStop = false;
             this.ptbExit.Click += new System.EventHandler(this.ptbExit_Click);
@@ -265,37 +247,37 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(176)))), ((int)(((byte)(211)))));
-            this.panel4.Controls.Add(this.label5);
-            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.lblRole);
+            this.panel4.Controls.Add(this.lblUserName);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.label1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(215, 36);
+            this.panel4.Location = new System.Drawing.Point(215, 41);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(985, 95);
             this.panel4.TabIndex = 3;
             // 
-            // label5
+            // lblRole
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(174, 55);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 19);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Admin";
+            this.lblRole.AutoSize = true;
+            this.lblRole.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRole.ForeColor = System.Drawing.Color.White;
+            this.lblRole.Location = new System.Drawing.Point(174, 55);
+            this.lblRole.Name = "lblRole";
+            this.lblRole.Size = new System.Drawing.Size(62, 19);
+            this.lblRole.TabIndex = 3;
+            this.lblRole.Text = "Admin";
             // 
-            // label4
+            // lblUserName
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(174, 20);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 19);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Ronaldo";
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserName.ForeColor = System.Drawing.Color.White;
+            this.lblUserName.Location = new System.Drawing.Point(174, 20);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(74, 19);
+            this.lblUserName.TabIndex = 2;
+            this.lblUserName.Text = "Ronaldo";
             // 
             // label3
             // 
@@ -322,9 +304,9 @@
             // panelControls
             // 
             this.panelControls.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControls.Location = new System.Drawing.Point(215, 131);
+            this.panelControls.Location = new System.Drawing.Point(215, 136);
             this.panelControls.Name = "panelControls";
-            this.panelControls.Size = new System.Drawing.Size(985, 589);
+            this.panelControls.Size = new System.Drawing.Size(985, 584);
             this.panelControls.TabIndex = 4;
             // 
             // frmMain
@@ -367,11 +349,10 @@
         private System.Windows.Forms.Button btnAccount;
         private System.Windows.Forms.Button btnProduct;
         private System.Windows.Forms.Button btnKind;
-        private System.Windows.Forms.Button btnBill;
         private System.Windows.Forms.Button btnSell;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblRole;
+        private System.Windows.Forms.Label lblUserName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panelControls;
         private System.Windows.Forms.PictureBox ptbExit;

@@ -15,15 +15,10 @@ namespace QuanLyShopDoChoi.Class
         public static void Connect()
         {
             Con = new SqlConnection();
-            Con.ConnectionString = "";
-            if (Con.State != ConnectionState.Open )
+            Con.ConnectionString = "server=.; database = Toystore; Integrated Security = true;";
+            if(Con.State != ConnectionState.Open)
             {
                 Con.Open();
-                MessageBox.Show("Kết nối thành công");
-            }
-            else
-            {
-                MessageBox.Show("Kết nối thất bại");
             }
         }
 

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using QuanLyShopDoChoi.Class;
 namespace QuanLyShopDoChoi.Usercontrol
 {
     public partial class uc_product : UserControl
@@ -44,7 +44,7 @@ namespace QuanLyShopDoChoi.Usercontrol
 
         private void uc_product_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

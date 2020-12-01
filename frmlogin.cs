@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QuanLyShopDoChoi.Class;
+using System.Data.SqlClient;
 
 namespace QuanLyShopDoChoi
 {
@@ -16,31 +18,34 @@ namespace QuanLyShopDoChoi
         {
             InitializeComponent();
         }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
            
         }
-        private void frmlogin_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void pbExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult dialogResult = MessageBox.Show("bạn có thực sự muốn thoát ?", "THOÁT", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                Application.Exit();
+                Function.DisConnect();
+            }
         }
-
-
-
         private void btnLogin_Click_1(object sender, EventArgs e)
-        {
-            frmMain main = new frmMain();
-            frmlogin login = new frmlogin();
-            main.ShowDialog();
-            login.Close();
+        {          
+            string query = "SELECT Username,Password FROM Account WHERE Username = '" + txtUsername.Text + "' and Password = '" + txtPassword.Text + "'";            
+            if (Function.GetDataToTable(query).Rows.Count > 0)
+            {
+                frmMain main = new frmMain();
+                main.Usname = txtUsername.Text;
+                main.ShowDialog();               
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Tài khoản hoặc mật khẩu không đúng. Vui lòng kiểm tra lại", "Đăng nhập thất bại");
+            }            
         }
-
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -67,6 +72,10 @@ namespace QuanLyShopDoChoi
         }
 
         private void frmlogin_Load_1(object sender, EventArgs e)
+        {
+            Function.Connect();
+        }
+        private void btnLogin_Enter_1(object sender, EventArgs e)
         {
 
         }
