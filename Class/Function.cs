@@ -15,7 +15,7 @@ namespace QuanLyShopDoChoi.Class
         public static void Connect()
         {
             Con = new SqlConnection();
-            Con.ConnectionString = "";
+            Con.ConnectionString = @"server=HAQ\TAB; database = Toystore; Integrated Security = true; ";
             if (Con.State != ConnectionState.Open )
             {
                 Con.Open();

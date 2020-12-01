@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyShopDoChoi.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -68,7 +69,7 @@ namespace QuanLyShopDoChoi
 
         private void frmlogin_Load_1(object sender, EventArgs e)
         {
-
+            Function.Connect();
         }
     }
 }
