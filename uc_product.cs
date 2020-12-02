@@ -8,10 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyShopDoChoi.Class;
-<<<<<<< HEAD
+using System.Data.OleDb;
 
-=======
->>>>>>> d94b5dd681a8189de6c73d080c5304e6b50ed2dc
 namespace QuanLyShopDoChoi.Usercontrol
 {
     public partial class uc_product : UserControl
@@ -57,13 +55,12 @@ namespace QuanLyShopDoChoi.Usercontrol
 
         private void uc_product_Load(object sender, EventArgs e)
         {
-<<<<<<< HEAD
+
             btnThem.Enabled = true;
             btnCapNhat.Enabled = false;
             btnXoa.Enabled = false;
             dgvProducts.AllowUserToAddRows = false;
             dgvProducts.EditMode = DataGridViewEditMode.EditProgrammatically;
- 
             GetDataTodgv();
         }
 
@@ -132,9 +129,25 @@ namespace QuanLyShopDoChoi.Usercontrol
         {
             string sql = "SELECT * FROM Kind";
             Function.FillCombo(sql, cbKindToy, "KindID", "KindOfToy");
-=======
-            
->>>>>>> d94b5dd681a8189de6c73d080c5304e6b50ed2dc
+        }
+
+        private void cbsearchpro_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtsearchpro_TextChanged(object sender, EventArgs e)
+        {
+            dgvProducts.DataSource = dt;
+            MessageBox.Show("DataSource type BEFORE = " + dgvProducts.DataSource.GetType().ToString());
+
+            dt.DefaultView.RowFilter = string.Format("ToyTitle LIKE '%{0}%'", txtsearch.Text);
+
+            MessageBox.Show("DataSource type AFTER = " + dgvProducts.DataSource.GetType().ToString());
+        }
+        private void txtsearch_Click(object sender, EventArgs e)
+        {
+         
         }
     }
 }
