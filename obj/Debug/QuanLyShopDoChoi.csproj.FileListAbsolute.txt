@@ -1,0 +1,16 @@
+E:\TaiLieu\WindowsForm\ShopDoChoi\bin\Debug\QuanLyShopDoChoi.exe.config
+E:\TaiLieu\WindowsForm\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.csprojResolveAssemblyReference.cache
+E:\TaiLieu\WindowsForm\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.frmlogin.resources
+E:\TaiLieu\WindowsForm\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.frmMain.resources
+E:\TaiLieu\WindowsForm\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.Properties.Resources.resources
+E:\TaiLieu\WindowsForm\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.UC_Account.resources
+E:\TaiLieu\WindowsForm\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.UC_Customer.resources
+E:\TaiLieu\WindowsForm\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.UC_Home.resources
+E:\TaiLieu\WindowsForm\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.UC_Sales.resources
+E:\TaiLieu\WindowsForm\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.Usercontrol.uc_kind.resources
+E:\TaiLieu\WindowsForm\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.Usercontrol.uc_product.resources
+E:\TaiLieu\WindowsForm\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.csproj.GenerateResource.Cache
+E:\TaiLieu\WindowsForm\ShopDoChoi\bin\Debug\QuanLyShopDoChoi.exe
+E:\TaiLieu\WindowsForm\ShopDoChoi\bin\Debug\QuanLyShopDoChoi.pdb
+E:\TaiLieu\WindowsForm\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.exe
+E:\TaiLieu\WindowsForm\ShopDoChoi\obj\Debug\QuanLyShopDoChoi.pdb

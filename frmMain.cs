@@ -110,7 +110,9 @@ namespace QuanLyShopDoChoi
         }
         private void ptbExit_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            frmlogin login = new frmlogin();
+            login.ShowDialog();
+            this.Close();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

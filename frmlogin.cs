@@ -75,13 +75,9 @@ namespace QuanLyShopDoChoi
         private void frmlogin_Load_1(object sender, EventArgs e)
         {
             Function.Connect();
-<<<<<<< HEAD
-=======
         }
         private void btnLogin_Enter_1(object sender, EventArgs e)
         {
-
->>>>>>> d94b5dd681a8189de6c73d080c5304e6b50ed2dc
         }
     }
 }

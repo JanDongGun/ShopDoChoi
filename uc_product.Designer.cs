@@ -40,11 +40,8 @@
             this.cbsearchpro = new System.Windows.Forms.ComboBox();
             this.btnCapNhat = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-<<<<<<< HEAD
             this.cbKindToy = new System.Windows.Forms.ComboBox();
-=======
             this.cboKind = new System.Windows.Forms.ComboBox();
->>>>>>> d94b5dd681a8189de6c73d080c5304e6b50ed2dc
             this.txtsearchpro = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtQty = new System.Windows.Forms.TextBox();
@@ -194,7 +191,6 @@
             this.label6.TabIndex = 16;
             this.label6.Text = "Kind of toy";
             // 
-<<<<<<< HEAD
             // cbKindToy
             // 
             this.cbKindToy.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
@@ -206,7 +202,6 @@
             this.cbKindToy.Name = "cbKindToy";
             this.cbKindToy.Size = new System.Drawing.Size(186, 29);
             this.cbKindToy.TabIndex = 17;
-=======
             // cboKind
             // 
             this.cboKind.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
@@ -221,7 +216,6 @@
             this.cboKind.Name = "cboKind";
             this.cboKind.Size = new System.Drawing.Size(186, 29);
             this.cboKind.TabIndex = 17;
->>>>>>> d94b5dd681a8189de6c73d080c5304e6b50ed2dc
             // 
             // txtsearchpro
             // 
@@ -335,11 +329,8 @@
             this.Controls.Add(this.txtQty);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtsearchpro);
-<<<<<<< HEAD
             this.Controls.Add(this.cbKindToy);
-=======
             this.Controls.Add(this.cboKind);
->>>>>>> d94b5dd681a8189de6c73d080c5304e6b50ed2dc
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnCapNhat);
             this.Controls.Add(this.cbsearchpro);
@@ -354,11 +345,8 @@
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(176)))), ((int)(((byte)(211)))));
             this.Name = "uc_product";
-<<<<<<< HEAD
             this.Size = new System.Drawing.Size(934, 504);
-=======
             this.Size = new System.Drawing.Size(917, 521);
->>>>>>> d94b5dd681a8189de6c73d080c5304e6b50ed2dc
             this.Load += new System.EventHandler(this.uc_product_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).EndInit();
             this.ResumeLayout(false);
@@ -380,11 +368,8 @@
         private System.Windows.Forms.ComboBox cbsearchpro;
         private System.Windows.Forms.Button btnCapNhat;
         private System.Windows.Forms.Label label6;
-<<<<<<< HEAD
         private System.Windows.Forms.ComboBox cbKindToy;
-=======
         private System.Windows.Forms.ComboBox cboKind;
->>>>>>> d94b5dd681a8189de6c73d080c5304e6b50ed2dc
         private System.Windows.Forms.TextBox txtsearchpro;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtQty;
