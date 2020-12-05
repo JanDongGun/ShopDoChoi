@@ -56,6 +56,9 @@ namespace QuanLyShopDoChoi
             moveSidePanel(btnSell);
             UC_Sales ucs = new UC_Sales();
             AddControlsToPanel(ucs);
+            ucs.fo = lblUserName.Text;
+
+            
         }
         private void btnKind_Click(object sender, EventArgs e)
         {
@@ -96,6 +99,7 @@ namespace QuanLyShopDoChoi
             string sql = "SELECT Role FROM Account WHERE Username = N'" + lblUserName.Text + "'";
             lblRole.Text = Function.GetFieldValue(sql);
             CheckRole();
+
         }
         private void CheckRole()
         {
