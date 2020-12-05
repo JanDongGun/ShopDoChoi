@@ -15,9 +15,15 @@ namespace QuanLyShopDoChoi.Class
         public static void Connect()
         {
             Con = new SqlConnection();
+<<<<<<< HEAD
            // Con.ConnectionString = "Server=.; Database = Toystore; Integrated Security = true;";
             Con.ConnectionString = @"Data Source=.\sqlexpress;Initial Catalog=Toystore;Integrated Security=True";
             if(Con.State != ConnectionState.Open)
+=======
+            //Con.ConnectionString = @"server=HAQ\TAB; database = Toystore; Integrated Security = true; ";
+            Con.ConnectionString = "server=.; database = Toystore; Integrated Security = true; ";
+            if (Con.State != ConnectionState.Open)
+>>>>>>> d3d573a45285aa2d7344b5248f58f7fcbcb52bf7
             {
                 Con.Open();
             }

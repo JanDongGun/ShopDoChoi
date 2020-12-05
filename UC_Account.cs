@@ -32,17 +32,17 @@ namespace QuanLyShopDoChoi
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (CheckID())
+            if (txtUsername.Text == "" || txtPassword.Text == "" || txtFullname.Text == "" || txtPhonenumber.Text == "" || CheckID() == true)
             {
                 MessageBox.Show("Thêm thất bại");
             }
             else
             {
-                string sql = "insert into Account(Username, Password, Fullname, Phonenumber, Role) values (N'"+ txtUsername.Text + "', N'" + txtPassword.Text + "', N'" + txtFullname.Text + "', N'" + txtPhonenumber.Text + "', N'" + cboRole.Text +"')";
+                string sql = "insert into Account(Username, Password, Fullname, Phonenumber, Role) values (N'" + txtUsername.Text + "', N'" + txtPassword.Text + "', N'" + txtFullname.Text + "', N'" + txtPhonenumber.Text + "', N'" + cboRole.Text + "')";
                 Function.RunSQL(sql);
                 LoadDataToDgv();
-                ClearText();
             }
+            ClearText();
         }
         private void UC_Account_Load(object sender, EventArgs e)
         {
@@ -54,33 +54,33 @@ namespace QuanLyShopDoChoi
             sql = "SELECT * FROM Account";
             datatbl = Function.GetDataToTable(sql);
             dgvAccount.DataSource = datatbl;
+            FillCbb();
             dgvAccount.EditMode = DataGridViewEditMode.EditProgrammatically;
             dgvAccount.AllowUserToAddRows = false;
-            FillCbb();
+            ClearText();
         }
         private void FillCbb()
         {
             List<string> comboSource = new List<string>();
-            comboSource.Add("Admin");
             comboSource.Add("Staff");
+            comboSource.Add("Admin");
             cboRole.DataSource = comboSource;
         }
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text != "" && txtPassword.Text != "" && txtFullname.Text != "" && txtPhonenumber.Text != "" && cboRole.Text != "")
+            if (txtUsername.Text == "" || txtPassword.Text == "" || txtFullname.Text == "" || txtPhonenumber.Text == "")
             {
-                string sql = "update Account set Password= N'"+txtPassword.Text+"', Fullname= N'"+txtFullname.Text + "', Phonenumber= N'"+ txtPhonenumber.Text+"', Role= N'"+cboRole.Text+"' where Username= N'"+ txtUsername.Text + "'";
-                Function.RunSQL(sql);
-               
-                MessageBox.Show("Cập nhật thành công");
-                LoadDataToDgv();
-                ClearText();         
+                MessageBox.Show("Cập nhật thất bại");         
             }
             else
             {
-                MessageBox.Show("Đã có lỗi xảy ra", "Cập nhật thất bại");
-                ClearText();
+                string sql = "update Account set Password= N'" + txtPassword.Text + "', Fullname= N'" + txtFullname.Text + "', Phonenumber= N'" + txtPhonenumber.Text + "', Role= N'" + cboRole.Text + "' where Username= N'" + txtUsername.Text + "'";
+                Function.RunSQL(sql);
+
+                MessageBox.Show("Cập nhật thành công");
+                LoadDataToDgv();
             }
+            ClearText();
         }                   
         private void dgvAccount_Click(object sender, EventArgs e)
         {
@@ -89,6 +89,8 @@ namespace QuanLyShopDoChoi
             txtFullname.Text = dgvAccount.SelectedCells[2].Value.ToString();
             txtPhonenumber.Text = dgvAccount.SelectedCells[3].Value.ToString();
             cboRole.Text = dgvAccount.SelectedCells[4].Value.ToString();
+            btnUpdate.Enabled = true;
+            btnDelete.Enabled = true;
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -102,8 +104,8 @@ namespace QuanLyShopDoChoi
                 string query = "DELETE Account WHERE Username = '" + usname + "'";
                 Function.RunSQL(query);
                 dgvAccount.Rows.Remove(dgvAccount.SelectedRows[0]);
-                ClearText();
-            }      
+            }
+            ClearText();
         }
         private void ClearText()
         {
@@ -111,6 +113,9 @@ namespace QuanLyShopDoChoi
             txtPassword.Text = "";
             txtFullname.Text = "";
             txtPhonenumber.Text = "";
+            cboRole.SelectedIndex = -1;
+            btnDelete.Enabled = false;
+            btnUpdate.Enabled = false;
         }
         private void btnClear_Click(object sender, EventArgs e)
         {

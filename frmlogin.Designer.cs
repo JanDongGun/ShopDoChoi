@@ -123,7 +123,7 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(411, 33);
             this.txtUsername.TabIndex = 0;
-            this.txtUsername.Text = "Dung";
+            this.txtUsername.Text = "Quang";
             this.txtUsername.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btnLogin
@@ -149,7 +149,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(411, 33);
             this.txtPassword.TabIndex = 1;
-            this.txtPassword.Text = "123";
+            this.txtPassword.Text = "456789";
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // frmlogin

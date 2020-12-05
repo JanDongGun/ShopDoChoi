@@ -308,6 +308,7 @@
             this.panelControls.Name = "panelControls";
             this.panelControls.Size = new System.Drawing.Size(985, 584);
             this.panelControls.TabIndex = 4;
+            this.panelControls.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControls_Paint);
             // 
             // frmMain
             // 
