@@ -8,7 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyShopDoChoi.Class;
+
 using System.Data.OleDb;
+
 
 namespace QuanLyShopDoChoi.Usercontrol
 {
@@ -28,9 +30,8 @@ namespace QuanLyShopDoChoi.Usercontrol
                 string query = "DELETE Toy WHERE ToyID = " + txtToyID.Text;
                 Function.RunSQL(query);
                 GetDataTodgv();
-                MacDinh();
-                btnThem.Enabled = true;
             }
+            MacDinh();
         }
 
         private void btnSuapro_Click(object sender, EventArgs e)
@@ -50,31 +51,45 @@ namespace QuanLyShopDoChoi.Usercontrol
 
         private void cbSortpro_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (cbSort.SelectedItem == "Price")
+            {
+                this.dgvProducts.Sort(this.dgvProducts.Columns[3], ListSortDirection.Ascending);
+            }
+            else
+            {
+                if (cbSort.SelectedItem == "A -> Z")
+                {
+                    this.dgvProducts.Sort(this.dgvProducts.Columns[1], ListSortDirection.Ascending);
+                }
+                else
+                {
+                    this.dgvProducts.Sort(this.dgvProducts.Columns[2], ListSortDirection.Ascending);
+                }
+            }
         }
 
         private void uc_product_Load(object sender, EventArgs e)
         {
-
-            btnThem.Enabled = true;
-            btnCapNhat.Enabled = false;
-            btnXoa.Enabled = false;
             dgvProducts.AllowUserToAddRows = false;
             dgvProducts.EditMode = DataGridViewEditMode.EditProgrammatically;
             GetDataTodgv();
+            MacDinh();
         }
 
         private void btnThempro_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Chắc chưa?", "Add", MessageBoxButtons.YesNo);
-            if (dialogResult == DialogResult.Yes)
+            if (txtToyTitle.Text == "" || txtPrice.Text == "" || txtQty.Text == "" || cbKindToy.Text == "")
+            {
+                MessageBox.Show("Them ho cai");
+            }
+            else
             {
                 string query = "INSERT INTO Toy(ToyTitle, KindID, Price, Quantity, Note) VALUES (N'" + txtToyTitle.Text + "', " +
                     "N'" + cbKindToy.SelectedValue + "', N'" + txtPrice.Text + "', N'" + txtQty.Text + "', N'" + txtNote.Text + "')";
                 Function.RunSQL(query);
                 GetDataTodgv();
-                MacDinh();
             }
+            MacDinh();
         }
         private void GetDataTodgv()
         {
@@ -84,19 +99,21 @@ namespace QuanLyShopDoChoi.Usercontrol
             bs.DataSource = dt;
             dgvProducts.DataSource = bs;
             FillCombo();
-         
+
         }
 
         private void MacDinh()
         {
+            txtsearch.Enabled = false;
+            btnThem.Enabled = true;
+            btnCapNhat.Enabled = false;
+            btnXoa.Enabled = false;
             txtToyID.Text = "";
-            cbKindToy.Text = "";
+            cbKindToy.SelectedIndex = -1;
             txtToyTitle.Text = "";
             txtQty.Text = "";
             txtPrice.Text = "";
             txtNote.Text = "";
-            btnXoa.Enabled = false;
-            btnCapNhat.Enabled = false;
         }
 
         private void dgvProducts_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -114,40 +131,109 @@ namespace QuanLyShopDoChoi.Usercontrol
 
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Chắc chưa?", "Update", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (txtToyTitle.Text == "" || txtPrice.Text == "" || txtQty.Text == "" || cbKindToy.Text == "")
+            {
+                MessageBox.Show("Cap nhat ho");
+            }
+            else
             {
                 string query = "UPDATE Toy Set ToyTitle = N'" + txtToyTitle.Text + "', KindID = N'" + cbKindToy.SelectedValue + "', Price = N'" + txtPrice.Text + "', " +
                     "Quantity = N'" + txtQty.Text + "', Note = N'" + txtNote.Text + "' WHERE ToyID = " + txtToyID.Text;
                 Function.RunSQL(query);
                 GetDataTodgv();
-                MacDinh();
-                btnThem.Enabled = true;
             }
+            MacDinh();
         }
 
         private void FillCombo()
         {
             string sql = "SELECT * FROM Kind";
             Function.FillCombo(sql, cbKindToy, "KindID", "KindOfToy");
+
         }
 
         private void cbsearchpro_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (cbsearch.SelectedItem == "")
+            {
+                txtsearch.Enabled = false;
+            }
+            else
+            {
+                txtsearch.Enabled = true;
+            }
         }
 
         private void txtsearchpro_TextChanged(object sender, EventArgs e)
         {
-            dgvProducts.DataSource = dt;
-            MessageBox.Show("DataSource type BEFORE = " + dgvProducts.DataSource.GetType().ToString());
+            if (cbsearch.SelectedItem == "Toy title")
+            {
+                dt.DefaultView.RowFilter = string.Format("ToyTitle LIKE '%{0}%'", txtsearch.Text);
+            }
+            else
+            {
+                if (cbsearch.SelectedItem == "ID")
+                {
+                    if (txtsearch.Text == "")
+                    {
+                        GetDataTodgv();
+                    }
+                    else
+                    {
+                        dt.DefaultView.RowFilter = string.Format("ToyID = '{0}'", txtsearch.Text);
+                    }
+                }
+                else
+                {
+                    if (cbsearch.SelectedItem == "Price")
+                    {
+                        if (txtsearch.Text == "")
+                        {
+                            GetDataTodgv();
+                        }
+                        else
+                        {
+                            dt.DefaultView.RowFilter = string.Format("Price = '{0}'", txtsearch.Text);
+                        }
+                    }
+                }
+            }
 
-            dt.DefaultView.RowFilter = string.Format("ToyTitle LIKE '%{0}%'", txtsearch.Text);
-
-            MessageBox.Show("DataSource type AFTER = " + dgvProducts.DataSource.GetType().ToString());
         }
         private void txtsearch_Click(object sender, EventArgs e)
         {
-         
+
+        }
+
+        private void txtsearch_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (cbsearch.SelectedItem == "ID" || cbsearch.SelectedItem == "Price")
+            {
+                if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+                    e.Handled = true;
+            }
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            MacDinh();
+        }
+
+        private void txtPrice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPrice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void txtQty_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+                e.Handled = true;
         }
     }
 }

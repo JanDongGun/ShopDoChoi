@@ -37,6 +37,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtKindID = new System.Windows.Forms.TextBox();
             this.dgvKind = new System.Windows.Forms.DataGridView();
+            this.btnClear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKind)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,7 +69,7 @@
             this.btnThemkind.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThemkind.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemkind.ForeColor = System.Drawing.Color.White;
-            this.btnThemkind.Location = new System.Drawing.Point(337, 220);
+            this.btnThemkind.Location = new System.Drawing.Point(285, 212);
             this.btnThemkind.Name = "btnThemkind";
             this.btnThemkind.Size = new System.Drawing.Size(108, 33);
             this.btnThemkind.TabIndex = 4;
@@ -82,7 +83,7 @@
             this.btnXoakind.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoakind.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoakind.ForeColor = System.Drawing.Color.Transparent;
-            this.btnXoakind.Location = new System.Drawing.Point(595, 220);
+            this.btnXoakind.Location = new System.Drawing.Point(543, 212);
             this.btnXoakind.Name = "btnXoakind";
             this.btnXoakind.Size = new System.Drawing.Size(108, 33);
             this.btnXoakind.TabIndex = 5;
@@ -96,7 +97,7 @@
             this.btnUpdatek.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdatek.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdatek.ForeColor = System.Drawing.Color.White;
-            this.btnUpdatek.Location = new System.Drawing.Point(468, 220);
+            this.btnUpdatek.Location = new System.Drawing.Point(416, 212);
             this.btnUpdatek.Name = "btnUpdatek";
             this.btnUpdatek.Size = new System.Drawing.Size(108, 33);
             this.btnUpdatek.TabIndex = 6;
@@ -141,9 +142,11 @@
             // dgvKind
             // 
             this.dgvKind.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvKind.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvKind.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvKind.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvKind.Location = new System.Drawing.Point(0, 370);
+            this.dgvKind.MultiSelect = false;
             this.dgvKind.Name = "dgvKind";
             this.dgvKind.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvKind.Size = new System.Drawing.Size(1198, 267);
@@ -152,10 +155,25 @@
             this.dgvKind.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dgvKind.Click += new System.EventHandler(this.dgvKind_Click);
             // 
+            // btnClear
+            // 
+            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(176)))), ((int)(((byte)(211)))));
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.Color.White;
+            this.btnClear.Location = new System.Drawing.Point(667, 212);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(108, 33);
+            this.btnClear.TabIndex = 28;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // uc_kind
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.dgvKind);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtKindID);
@@ -165,8 +183,8 @@
             this.Controls.Add(this.btnThemkind);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtTenLoaiDC);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(176)))), ((int)(((byte)(211)))));
+            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "uc_kind";
             this.Size = new System.Drawing.Size(1198, 637);
             this.Load += new System.EventHandler(this.uc_kind_Load);
@@ -187,5 +205,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtKindID;
         private System.Windows.Forms.DataGridView dgvKind;
+        private System.Windows.Forms.Button btnClear;
     }
 }

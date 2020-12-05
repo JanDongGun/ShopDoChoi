@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,19 +39,21 @@
             this.txtToyTitle = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.cbsearchpro = new System.Windows.Forms.ComboBox();
+            this.cbsearch = new System.Windows.Forms.ComboBox();
             this.btnCapNhat = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.cbKindToy = new System.Windows.Forms.ComboBox();
             this.txtsearch = new System.Windows.Forms.TextBox();
+            this.cboKind = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtQty = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.cbSortpro = new System.Windows.Forms.ComboBox();
+            this.cbSort = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.txtNote = new System.Windows.Forms.TextBox();
             this.dgvProducts = new System.Windows.Forms.DataGridView();
+            this.btnClear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
             this.SuspendLayout();
             // 
@@ -92,7 +96,7 @@
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoa.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ForeColor = System.Drawing.Color.Transparent;
-            this.btnXoa.Location = new System.Drawing.Point(572, 268);
+            this.btnXoa.Location = new System.Drawing.Point(507, 269);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(108, 33);
             this.btnXoa.TabIndex = 8;
@@ -106,7 +110,7 @@
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Location = new System.Drawing.Point(329, 268);
+            this.btnThem.Location = new System.Drawing.Point(264, 269);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(108, 33);
             this.btnThem.TabIndex = 7;
@@ -139,6 +143,8 @@
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(186, 27);
             this.txtPrice.TabIndex = 11;
+            this.txtPrice.TextChanged += new System.EventHandler(this.txtPrice_TextChanged);
+            this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrice_KeyPress);
             // 
             // label5
             // 
@@ -151,20 +157,20 @@
             this.label5.TabIndex = 13;
             this.label5.Text = "Search By";
             // 
-            // cbsearchpro
+            // cbsearch
             // 
-            this.cbsearchpro.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbsearchpro.FormattingEnabled = true;
-            this.cbsearchpro.Items.AddRange(new object[] {
+            this.cbsearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbsearch.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbsearch.FormattingEnabled = true;
+            this.cbsearch.Items.AddRange(new object[] {
             "ID",
             "Toy title",
-            "Kind of toy",
             "Price"});
-            this.cbsearchpro.Location = new System.Drawing.Point(690, 322);
-            this.cbsearchpro.Name = "cbsearchpro";
-            this.cbsearchpro.Size = new System.Drawing.Size(61, 24);
-            this.cbsearchpro.TabIndex = 14;
-            this.cbsearchpro.SelectedIndexChanged += new System.EventHandler(this.cbsearchpro_SelectedIndexChanged);
+            this.cbsearch.Location = new System.Drawing.Point(690, 322);
+            this.cbsearch.Name = "cbsearch";
+            this.cbsearch.Size = new System.Drawing.Size(61, 24);
+            this.cbsearch.TabIndex = 14;
+            this.cbsearch.SelectedIndexChanged += new System.EventHandler(this.cbsearchpro_SelectedIndexChanged);
             // 
             // btnCapNhat
             // 
@@ -172,7 +178,7 @@
             this.btnCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCapNhat.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCapNhat.ForeColor = System.Drawing.Color.White;
-            this.btnCapNhat.Location = new System.Drawing.Point(449, 268);
+            this.btnCapNhat.Location = new System.Drawing.Point(384, 269);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(108, 33);
             this.btnCapNhat.TabIndex = 15;
@@ -212,6 +218,22 @@
             this.txtsearch.TabIndex = 18;
             this.txtsearch.Click += new System.EventHandler(this.txtsearch_Click);
             this.txtsearch.TextChanged += new System.EventHandler(this.txtsearchpro_TextChanged);
+            this.txtsearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtsearch_KeyPress);
+            // 
+            // cboKind
+            // 
+            this.cboKind.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboKind.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboKind.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboKind.FormattingEnabled = true;
+            this.cboKind.Items.AddRange(new object[] {
+            "Xe",
+            "Hạng nặng",
+            "Búp bê"});
+            this.cboKind.Location = new System.Drawing.Point(570, 124);
+            this.cboKind.Name = "cboKind";
+            this.cboKind.Size = new System.Drawing.Size(186, 29);
+            this.cboKind.TabIndex = 17;
             // 
             // label4
             // 
@@ -233,6 +255,7 @@
             this.txtQty.Name = "txtQty";
             this.txtQty.Size = new System.Drawing.Size(186, 28);
             this.txtQty.TabIndex = 20;
+            this.txtQty.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtQty_KeyPress);
             // 
             // label7
             // 
@@ -246,19 +269,19 @@
             this.label7.Text = "List";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // cbSortpro
+            // cbSort
             // 
-            this.cbSortpro.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbSortpro.FormattingEnabled = true;
-            this.cbSortpro.Items.AddRange(new object[] {
+            this.cbSort.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbSort.FormattingEnabled = true;
+            this.cbSort.Items.AddRange(new object[] {
             "A -> Z",
             "Kind",
-            "Toys sold"});
-            this.cbSortpro.Location = new System.Drawing.Point(940, 320);
-            this.cbSortpro.Name = "cbSortpro";
-            this.cbSortpro.Size = new System.Drawing.Size(80, 25);
-            this.cbSortpro.TabIndex = 22;
-            this.cbSortpro.SelectedIndexChanged += new System.EventHandler(this.cbSortpro_SelectedIndexChanged);
+            "Price"});
+            this.cbSort.Location = new System.Drawing.Point(940, 320);
+            this.cbSort.Name = "cbSort";
+            this.cbSort.Size = new System.Drawing.Size(80, 25);
+            this.cbSort.TabIndex = 22;
+            this.cbSort.SelectedIndexChanged += new System.EventHandler(this.cbSortpro_SelectedIndexChanged);
             // 
             // label8
             // 
@@ -294,33 +317,66 @@
             // dgvProducts
             // 
             this.dgvProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProducts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvProducts.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvProducts.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvProducts.Location = new System.Drawing.Point(0, 347);
+            this.dgvProducts.MultiSelect = false;
             this.dgvProducts.Name = "dgvProducts";
             this.dgvProducts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvProducts.Size = new System.Drawing.Size(1020, 150);
+            this.dgvProducts.Size = new System.Drawing.Size(1020, 255);
             this.dgvProducts.TabIndex = 26;
             this.dgvProducts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProducts_CellClick);
+            // 
+            // btnClear
+            // 
+            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(176)))), ((int)(((byte)(211)))));
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.Color.White;
+            this.btnClear.Location = new System.Drawing.Point(625, 269);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(108, 33);
+            this.btnClear.TabIndex = 27;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // uc_product
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.dgvProducts);
             this.Controls.Add(this.txtNote);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.cbSortpro);
+            this.Controls.Add(this.cbSort);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtQty);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtsearch);
             this.Controls.Add(this.cbKindToy);
+            this.Controls.Add(this.cboKind);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnCapNhat);
-            this.Controls.Add(this.cbsearchpro);
+            this.Controls.Add(this.cbsearch);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.txtToyTitle);
@@ -330,9 +386,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(176)))), ((int)(((byte)(211)))));
+            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "uc_product";
-            this.Size = new System.Drawing.Size(917, 487);
+            this.Size = new System.Drawing.Size(849, 436);
             this.Load += new System.EventHandler(this.uc_product_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).EndInit();
             this.ResumeLayout(false);
@@ -351,22 +408,22 @@
         private System.Windows.Forms.TextBox txtToyTitle;
         private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cbsearchpro;
+        private System.Windows.Forms.ComboBox cbsearch;
         private System.Windows.Forms.Button btnCapNhat;
         private System.Windows.Forms.Label label6;
-<<<<<<< HEAD
         private System.Windows.Forms.ComboBox cbKindToy;
-=======
         private System.Windows.Forms.ComboBox cboKind;
->>>>>>> d94b5dd681a8189de6c73d080c5304e6b50ed2dc
+
         private System.Windows.Forms.TextBox txtsearch;
+
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtQty;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox cbSortpro;
+        private System.Windows.Forms.ComboBox cbSort;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtNote;
         private System.Windows.Forms.DataGridView dgvProducts;
+        private System.Windows.Forms.Button btnClear;
     }
 }

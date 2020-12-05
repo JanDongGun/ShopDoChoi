@@ -38,25 +38,34 @@ namespace QuanLyShopDoChoi.Usercontrol
 
         private void btnThemkind_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Chắc chưa?", "Add", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (txtTenLoaiDC.Text == "")
+            {
+                MessageBox.Show("hi");
+            }
+            else
             {
                 string query = "INSERT INTO Kind(KindOfToy) VALUES (N'" + txtTenLoaiDC.Text + "')";
                 Function.RunSQL(query);
                 GetDataTodgv();
-                MacDinh();
+             
             }
+            MacDinh();
         }
 
         private void btnUpdatek_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Chắc chưa?", "Update", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (txtTenLoaiDC.Text == "")
+            {
+                MessageBox.Show("hi");
+            }
+            else
             {
                 string query = "UPDATE Kind Set KindOfToy = N'" + txtTenLoaiDC.Text + "' WHERE KindID = " + txtKindID.Text;
                 Function.RunSQL(query);
                 GetDataTodgv();
-                MacDinh();
                 btnThemkind.Enabled = true;
             }
+            MacDinh();
 
         }
 
@@ -110,6 +119,12 @@ namespace QuanLyShopDoChoi.Usercontrol
             btnXoakind.Enabled = true;
 
 
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            MacDinh();
+            btnThemkind.Enabled = true;
         }
     }
 }
