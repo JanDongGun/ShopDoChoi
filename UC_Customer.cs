@@ -65,12 +65,13 @@ namespace QuanLyShopDoChoi
             if (dgvCustomer.SelectedRows.Count == 0) return;
 
             string cstmID = dgvCustomer.SelectedCells[0].Value.ToString();
-            DialogResult dialogResult = MessageBox.Show("Bạn có thực sự muốn xóa", "XÓA", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("Are you sure?", "DELETE", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 string query = "DELETE Customer WHERE CustomerID = '" + cstmID + "'";
                 Function.RunSQL(query);
                 dgvCustomer.Rows.Remove(dgvCustomer.SelectedRows[0]);
+                MessageBox.Show("Delete successful");
             }
             ClearText();
         }
@@ -78,13 +79,14 @@ namespace QuanLyShopDoChoi
         {    
             if(txtFullname.Text == "" || txtAddress.Text == "" || txtPhonenumber.Text == "")
             {
-                MessageBox.Show("Thêm thất bại");
+                MessageBox.Show("Add failure");
             }
             else
             {
                 string sql = "insert into Customer(Fullname, Address, Phonenumber) values (N'" + txtFullname.Text + "', N'" + txtAddress.Text + "', N'" + txtPhonenumber.Text + "')";
                 Function.RunSQL(sql);
                 LoadDataToDgv();
+                MessageBox.Show("Add successful");
             }
                 ClearText();
         }
@@ -93,14 +95,14 @@ namespace QuanLyShopDoChoi
         {
             if (txtFullname.Text == "" || txtAddress.Text == "" || txtPhonenumber.Text == "")
             {
-                MessageBox.Show("Cập nhật thất bại");
+                MessageBox.Show("Update failed");
             }
             else
             {
                 string sql = "update Customer set Fullname= N'" + txtFullname.Text + "', Address= N'" + txtAddress.Text + "', Phonenumber= N'" + txtPhonenumber.Text + "' WHERE CustomerID = N'" + txtCustomerID.Text + "'";
                 Function.RunSQL(sql);
 
-                MessageBox.Show("Cập nhật thành công");
+                MessageBox.Show("Update successful");
                 LoadDataToDgv();
             }
             ClearText();

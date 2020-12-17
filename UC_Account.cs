@@ -34,7 +34,7 @@ namespace QuanLyShopDoChoi
         {
             if (txtUsername.Text == "" || txtPassword.Text == "" || txtFullname.Text == "" || txtPhonenumber.Text == "" || CheckID() == true)
             {
-                MessageBox.Show("Thêm thất bại");
+                MessageBox.Show("Add failure");
             }
             else
             {
@@ -70,14 +70,14 @@ namespace QuanLyShopDoChoi
         {
             if (txtUsername.Text == "" || txtPassword.Text == "" || txtFullname.Text == "" || txtPhonenumber.Text == "")
             {
-                MessageBox.Show("Cập nhật thất bại");         
+                MessageBox.Show("Update failed");         
             }
             else
             {
                 string sql = "update Account set Password= N'" + txtPassword.Text + "', Fullname= N'" + txtFullname.Text + "', Phonenumber= N'" + txtPhonenumber.Text + "', Role= N'" + cboRole.Text + "' where Username= N'" + txtUsername.Text + "'";
                 Function.RunSQL(sql);
 
-                MessageBox.Show("Cập nhật thành công");
+                MessageBox.Show("Update successful");
                 LoadDataToDgv();
             }
             ClearText();
@@ -98,7 +98,7 @@ namespace QuanLyShopDoChoi
             if (dgvAccount.SelectedRows.Count == 0) return;
 
             string usname = dgvAccount.SelectedCells[0].Value.ToString();
-            DialogResult dialogResult = MessageBox.Show("Bạn có thực sự muốn xóa", "XÓA", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("Are you sure?", "DELETE", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 string query = "DELETE Account WHERE Username = '" + usname + "'";

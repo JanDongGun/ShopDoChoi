@@ -25,11 +25,12 @@ namespace QuanLyShopDoChoi.Usercontrol
 
         private void btnXoapro_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Chắc chưa", "Delete", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("Are you sure?", "Delete", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 string query = "DELETE Toy WHERE ToyID = " + txtToyID.Text;
                 Function.RunSQL(query);
                 GetDataTodgv();
+                MessageBox.Show("Delete successful");
             }
             MacDinh();
         }
@@ -55,17 +56,24 @@ namespace QuanLyShopDoChoi.Usercontrol
             {
                 this.dgvProducts.Sort(this.dgvProducts.Columns[3], ListSortDirection.Ascending);
             }
-            else
+
+
+            if (cbSort.SelectedItem == "A -> Z")
             {
-                if (cbSort.SelectedItem == "A -> Z")
-                {
-                    this.dgvProducts.Sort(this.dgvProducts.Columns[1], ListSortDirection.Ascending);
-                }
-                else
-                {
-                    this.dgvProducts.Sort(this.dgvProducts.Columns[2], ListSortDirection.Ascending);
-                }
+                this.dgvProducts.Sort(this.dgvProducts.Columns[1], ListSortDirection.Ascending);
             }
+            if (cbSort.SelectedItem == "Kind")
+            {
+                this.dgvProducts.Sort(this.dgvProducts.Columns[2], ListSortDirection.Ascending);
+            }
+            if(cbSort.SelectedItem == "Toy sold")
+            {
+                string sql = "SELECT a.ToyID, a.ToyTitle, a.KindID, b.Price from dbo.Toy As a, Billinfo As b where a.ToyID = b.ToyID";
+                dt = Function.GetDataToTable(sql);
+                dgvProducts.DataSource = dt;
+            }    
+
+
         }
 
         private void uc_product_Load(object sender, EventArgs e)
@@ -80,7 +88,7 @@ namespace QuanLyShopDoChoi.Usercontrol
         {
             if (txtToyTitle.Text == "" || txtPrice.Text == "" || txtQty.Text == "" || cbKindToy.Text == "")
             {
-                MessageBox.Show("Them ho cai");
+                MessageBox.Show("Empty!");
             }
             else
             {
@@ -88,6 +96,7 @@ namespace QuanLyShopDoChoi.Usercontrol
                     "N'" + cbKindToy.SelectedValue + "', N'" + txtPrice.Text + "', N'" + txtQty.Text + "', N'" + txtNote.Text + "')";
                 Function.RunSQL(query);
                 GetDataTodgv();
+                MessageBox.Show("Add successful");
             }
             MacDinh();
         }
@@ -133,7 +142,7 @@ namespace QuanLyShopDoChoi.Usercontrol
         {
             if (txtToyTitle.Text == "" || txtPrice.Text == "" || txtQty.Text == "" || cbKindToy.Text == "")
             {
-                MessageBox.Show("Cap nhat ho");
+                MessageBox.Show("Empty!");
             }
             else
             {
@@ -141,8 +150,10 @@ namespace QuanLyShopDoChoi.Usercontrol
                     "Quantity = N'" + txtQty.Text + "', Note = N'" + txtNote.Text + "' WHERE ToyID = " + txtToyID.Text;
                 Function.RunSQL(query);
                 GetDataTodgv();
+                MacDinh();
+                MessageBox.Show("Update successful");
             }
-            MacDinh();
+
         }
 
         private void FillCombo()
@@ -226,7 +237,7 @@ namespace QuanLyShopDoChoi.Usercontrol
 
         private void txtPrice_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
                 e.Handled = true;
         }
 

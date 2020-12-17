@@ -40,23 +40,24 @@ namespace QuanLyShopDoChoi.Usercontrol
         {
             if (txtTenLoaiDC.Text == "")
             {
-                MessageBox.Show("hi");
+                MessageBox.Show("Empty!");
             }
             else
             {
                 string query = "INSERT INTO Kind(KindOfToy) VALUES (N'" + txtTenLoaiDC.Text + "')";
                 Function.RunSQL(query);
                 GetDataTodgv();
-             
+                MacDinh();
+                MessageBox.Show("Add successful");
             }
-            MacDinh();
+            
         }
 
         private void btnUpdatek_Click(object sender, EventArgs e)
         {
             if (txtTenLoaiDC.Text == "")
             {
-                MessageBox.Show("hi");
+                MessageBox.Show("Empty!");
             }
             else
             {
@@ -64,20 +65,21 @@ namespace QuanLyShopDoChoi.Usercontrol
                 Function.RunSQL(query);
                 GetDataTodgv();
                 btnThemkind.Enabled = true;
+                MacDinh();
+                MessageBox.Show("Update successful");
             }
-            MacDinh();
-
         }
 
         private void btnXoakind_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Chắc chưa", "Delete", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("Are you sure?", "Delete", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 string query = "DELETE Kind WHERE KindID = " + txtKindID.Text;
                 Function.RunSQL(query);
                 GetDataTodgv();
                 MacDinh();
                 btnThemkind.Enabled = true;
+                MessageBox.Show("Delete successful");
             }
         }
 

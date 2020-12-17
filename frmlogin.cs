@@ -24,7 +24,7 @@ namespace QuanLyShopDoChoi
         }
         private void pbExit_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("bạn có thực sự muốn thoát ?", "THOÁT", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("Do you want to exit?", "Exit", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 Application.Exit();
@@ -43,7 +43,7 @@ namespace QuanLyShopDoChoi
             }
             else
             {
-                MessageBox.Show("Tài khoản hoặc mật khẩu không đúng. Vui lòng kiểm tra lại", "Đăng nhập thất bại");
+                MessageBox.Show("The account or password is incorrect. Please check again.", "Login failed");
             }            
         }
         private void label2_Click(object sender, EventArgs e)
